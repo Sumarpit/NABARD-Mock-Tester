@@ -301,6 +301,44 @@
 </div>
 
 <script>
+    // --- PWA LAUNCH HANDLER (ROBUST VERSION) ---
+    if ('launchQueue' in window) {
+        window.launchQueue.setConsumer(async (launchParams) => {
+            if (!launchParams.files.length) return;
+            
+            try {
+                const fileHandle = launchParams.files[0];
+                const file = await fileHandle.getFile();
+                
+                // Debug Alert to confirm it worked (You can remove this later)
+                // alert("Opening file: " + file.name); 
+
+                // Pass to your existing loader
+                loadFiles([file]);
+                
+            } catch (err) {
+                console.error("File Open Error:", err);
+                alert("Error opening file: " + err.message);
+            }
+        });
+    }
+
+    // --- SERVICE WORKER ---
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('SW Registered'))
+        .catch(err => console.log('SW Fail', err));
+    }
+
+    window.onload = () => { 
+        try { 
+            loadLibraryFromStorage(); 
+            loadHistory(); 
+            checkResume(); 
+        } catch(e){ console.error(e); } 
+    };
+    
+    // ... (Rest of your existing functions: loadFiles, renderGrid, etc.)
     const KEY = 'nabard_v25_data';
     const HIST = 'nabard_v25_hist';
     const LIB_KEY = 'nabard_v25_library';
@@ -331,14 +369,6 @@
         .then(() => console.log('SW Registered'))
         .catch(err => console.log('SW Fail', err));
     }
-
-    window.onload = () => { 
-        try { 
-            loadLibraryFromStorage(); 
-            loadHistory(); 
-            checkResume(); 
-        } catch(e){ console.error(e); } 
-    };
 
     document.getElementById('jsonFile').onchange = (e) => loadFiles(e.target.files);
     const drop = document.getElementById('dropZone');
@@ -765,3 +795,4 @@
 </script>
 </body>
 </html>
+
