@@ -1,5 +1,5 @@
-const CACHE_NAME = 'nabard-exam-v1';
-const ASSETS = ['./exam.html', './manifest.json'];
+const CACHE_NAME = 'nabard-exam-v2'; // Changed to v2 to force update
+const ASSETS = ['./index.html', './manifest.json'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS)));
