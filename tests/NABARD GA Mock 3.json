@@ -1,0 +1,285 @@
+[
+  {
+    "section": "GA",
+    "topic": "Union Budget 2025-26",
+    "question": "In the Union Budget 2025-26, the government has set the 'Fiscal Deficit' target for the financial year 2025-26 at what percentage of GDP?",
+    "options": [
+      "5.1%",
+      "4.5%",
+      "4.8%",
+      "4.4%",
+      "3.9%"
+    ],
+    "answer": 3,
+    "explanation": "The target is **4.4%** of GDP for FY 2025-26. \n*Context:* The Revised Estimate (RE) for the previous year (2024-25) was 4.8%. The glide path aims for <4.5%."
+  },
+  {
+    "section": "GA",
+    "topic": "Schemes - Employment",
+    "question": "The 'Pradhan Mantri Viksit Bharat Rozgar Yojana' (PMVBRY) was launched with an outlay of ₹99,446 Crore. Which ministry is the nodal agency for this scheme?",
+    "options": [
+      "Ministry of Finance",
+      "Ministry of Commerce & Industry",
+      "Ministry of Labour & Employment",
+      "Ministry of Skill Development",
+      "Ministry of MSME"
+    ],
+    "answer": 2,
+    "explanation": "It is the **Ministry of Labour & Employment**. \n*Why this option matters:* Candidates often confuse it with the Ministry of Skill Development (PM-SETU) or Finance (because of the high outlay)."
+  },
+  {
+    "section": "GA",
+    "topic": "NABARD Annual Report 2024-25",
+    "question": "As per the NABARD Annual Report 2024-25, the Balance Sheet size of NABARD has reached approximately ₹9.8 Lakh Crore. What was the Year-on-Year (YoY) growth rate?",
+    "options": [
+      "10.2%",
+      "8.1%",
+      "13.6%",
+      "15.4%",
+      "5.5%"
+    ],
+    "answer": 1,
+    "explanation": "The growth rate was **8.1%**. \n*Trap:* 13.6% was the growth rate recorded in the previous year (FY24). NABARD loves asking the *rate* of growth, not just the absolute number."
+  },
+  {
+    "section": "GA",
+    "topic": "Important Days",
+    "question": "The 'World Soil Day' is observed annually on December 5th. What was the theme for the year 2025?",
+    "options": [
+      "Soils: Where food begins",
+      "Halt soil salinization, boost soil productivity",
+      "Keep soil alive, protect soil biodiversity",
+      "Soil and Water: A Source of Life",
+      "Caring for soils: measure, monitor, manage"
+    ],
+    "answer": 4,
+    "explanation": "The 2025 theme focuses on **'Caring for soils: measure, monitor, manage'**. \n*Relevance:* NABARD is an agri-focused exam; days like World Soil Day (Dec 5), World Food Day (Oct 16), and World Pulses Day (Feb 10) are 'Sure Shot' candidates."
+  },
+  {
+    "section": "GA",
+    "topic": "Schemes - Agriculture",
+    "question": "Under the 'Mission for Aatmanirbharta in Pulses', the government aims to achieve a yield target of ______ kg/hectare by 2030-31.",
+    "options": [
+      "881 kg/ha",
+      "1,000 kg/ha",
+      "1,130 kg/ha",
+      "1,250 kg/ha",
+      "1,500 kg/ha"
+    ],
+    "answer": 2,
+    "explanation": "The target is **1,130 kg/ha**. \n*Context:* The current yield is approx 881 kg/ha. This specific delta is a favorite examiner trap."
+  },
+  {
+    "section": "GA",
+    "topic": "Banking - RBI",
+    "question": "Which of the following entities acts as the implementing agency for the 'Payments Infrastructure Development Fund' (PIDF) scheme?",
+    "options": [
+      "NPCI",
+      "NABARD",
+      "Reserve Bank of India (RBI)",
+      "Indian Banks' Association (IBA)",
+      "SIDBI"
+    ],
+    "answer": 2,
+    "explanation": "The **Reserve Bank of India (RBI)** is the implementing agency. \n*Context:* The scheme was extended to Dec 31, 2025. It subsidizes PoS terminals in Tier-3 to Tier-6 centers."
+  },
+  {
+    "section": "GA",
+    "topic": "Reports - Economic Survey",
+    "question": "According to the Economic Survey 2024-25, what is the share of the Agriculture and Allied Sectors in India's total Gross Value Added (GVA) for FY 2023-24?",
+    "options": [
+      "14.5%",
+      "16.0%",
+      "18.3%",
+      "20.2%",
+      "15.0%"
+    ],
+    "answer": 1,
+    "explanation": "The share is approximately **16%**. \n*Analysis:* This figure has stabilized around 15-16% post-pandemic. NABARD asks this static economic data point every alternate year."
+  },
+  {
+    "section": "GA",
+    "topic": "Schemes - Textiles",
+    "question": "The 'Kapas Kranti Mission' aims to replicate the successful High-Density Plantation (HDP) model of which district?",
+    "options": [
+      "Yavatmal (Maharashtra)",
+      "Akola (Maharashtra)",
+      "Guntur (Andhra Pradesh)",
+      "Bathinda (Punjab)",
+      "Coimbatore (Tamil Nadu)"
+    ],
+    "answer": 1,
+    "explanation": "The mission replicates the **Akola (Maharashtra)** model in Telangana. \n*Why this Question:* NABARD focuses on 'Success Stories' and replicable agricultural models."
+  },
+  {
+    "section": "GA",
+    "topic": "Static GK - Headquarters",
+    "question": "Where is the headquarters of the 'Cotton Corporation of India' (CCI) located?",
+    "options": [
+      "New Delhi",
+      "Mumbai",
+      "Ahmedabad",
+      "Hyderabad",
+      "Nagpur"
+    ],
+    "answer": 1,
+    "explanation": "CCI is headquartered in **CBD Belapur, Navi Mumbai**. \n*Logic:* This is a Static GA question linked to Current Affairs (Kapas Kranti Mission). CCI is the nodal agency for cotton procurement."
+  },
+  {
+    "section": "GA",
+    "topic": "Schemes - Education",
+    "question": "The 'PM-Vidyalaxmi' scheme provides a credit guarantee of 75% for education loans up to what limit?",
+    "options": [
+      "₹5 Lakh",
+      "₹7.5 Lakh",
+      "₹10 Lakh",
+      "₹4 Lakh",
+      "₹20 Lakh"
+    ],
+    "answer": 1,
+    "explanation": "The guarantee covers loans up to **₹7.5 Lakh**. \n*Confusion Point:* Interest subvention is available for loans up to ₹10 Lakh, but the *guarantee* cap is ₹7.5 Lakh."
+  },
+  {
+    "section": "GA",
+    "topic": "NABARD Annual Report 2024-25",
+    "question": "What was the cumulative sanction amount under the Rural Infrastructure Development Fund (RIDF) as of 31st March 2025?",
+    "options": [
+      "₹4.98 Lakh Crore",
+      "₹5.95 Lakh Crore",
+      "₹6.50 Lakh Crore",
+      "₹3.75 Lakh Crore",
+      "₹8.90 Lakh Crore"
+    ],
+    "answer": 1,
+    "explanation": "Cumulative sanctions under RIDF stood at **₹5.95 Lakh Crore**. \n*Note:* ₹8.9 Lakh Crore is the total infrastructure sanction (including NIDA, etc.), but the question specifically asks for RIDF."
+  },
+  {
+    "section": "GA",
+    "topic": "Current Affairs - Summits",
+    "question": "Where was the 2025 BRICS Summit held?",
+    "options": [
+      "Russia (Kazan)",
+      "Brazil (Rio de Janeiro)",
+      "South Africa (Johannesburg)",
+      "India (New Delhi)",
+      "China (Beijing)"
+    ],
+    "answer": 1,
+    "explanation": "Brazil held the BRICS presidency in 2025. (Russia held it in 2024). \n*Tip:* Summit locations are standard GA questions. Always check the 'Year'."
+  },
+  {
+    "section": "GA",
+    "topic": "Schemes - Urban",
+    "question": "Under the PM-SVANidhi scheme, the maximum digital transaction cashback a vendor can earn annually is:",
+    "options": [
+      "₹600",
+      "₹1,000",
+      "₹1,200",
+      "₹1,500",
+      "₹2,400"
+    ],
+    "answer": 2,
+    "explanation": "The limit is **₹1,200 per annum** (calculated as ₹100 per month). \n*Relevance:* This tests depth of knowledge about a very popular scheme."
+  },
+  {
+    "section": "GA",
+    "topic": "Banking - Rates",
+    "question": "As of December 2025, what is the 'Bank Rate' set by the Reserve Bank of India?",
+    "options": [
+      "6.50%",
+      "6.75%",
+      "6.25%",
+      "5.15%",
+      "4.00%"
+    ],
+    "answer": 1,
+    "explanation": "Assuming the Repo Rate has remained stable at 6.50%, the Bank Rate (usually Repo + 0.25%) would be **6.75%**. \nRepo Rate: 5.25% (cut from 5.50% in Dec 2025).\n
+Reverse Repo Rate: 3.35% (often moves with repo rate changes).\n
+Marginal Standing Facility (MSF) Rate and bank rate:5.50% (historically repo + 25 bps).\n
+Cash Reserve Ratio (CRR): Reduced in phases to 3% by Nov 2025, releasing liquidity. 
+  },
+  {
+    "section": "GA",
+    "topic": "Schemes - Rural Dev",
+    "question": "To become a 'Lakhpati Didi', a woman SHG member must sustain an annual income of ₹1 Lakh for at least how many cycles?",
+    "options": [
+      "2 Cycles",
+      "3 Cycles",
+      "4 Cycles",
+      "5 Cycles",
+      "1 Cycle"
+    ],
+    "answer": 2,
+    "explanation": "The criteria require sustainability for at least **4 agricultural/business cycles**."
+  },
+  {
+    "section": "GA",
+    "topic": "Reports - Indices",
+    "question": "Which organization releases the 'Global Gender Gap Report'?",
+    "options": [
+      "UNDP",
+      "World Bank",
+      "World Economic Forum (WEF)",
+      "UN Women",
+      "IMF"
+    ],
+    "answer": 2,
+    "explanation": "It is released by the **World Economic Forum (WEF)**. \n*Pattern:* NABARD often asks about 'Gender' or 'Poverty' related indices."
+  },
+  {
+    "section": "GA",
+    "topic": "Agriculture - Production",
+    "question": "As per the Second Advance Estimates (2023-24) mentioned in the Economic Survey, what is the estimated Total Foodgrain Production in India?",
+    "options": [
+      "315 Million Tonnes",
+      "323 Million Tonnes",
+      "332 Million Tonnes",
+      "341 Million Tonnes",
+      "350 Million Tonnes"
+    ],
+    "answer": 2,
+    "explanation": "It is estimated at approximately **332 Million Tonnes**. \n*Critical:* Do not confuse with the 350 Lakh Tonnes *Target* for Pulses."
+  },
+  {
+    "section": "GA",
+    "topic": "Schemes - Culture",
+    "question": "The 'Gyan Bharatam Mission' for digitizing manuscripts was launched on which date?",
+    "options": [
+      "15th August 2025",
+      "9th June 2025",
+      "2nd October 2025",
+      "26th January 2025",
+      "1st July 2025"
+    ],
+    "answer": 1,
+    "explanation": "The launch date was **9th June 2025**. \n*Trend:* NABARD has a history of asking exact launch dates for flagship missions."
+  },
+  {
+    "section": "GA",
+    "topic": "Static GK - National Parks",
+    "question": "Kuno National Park, famous for the reintroduction of Cheetahs, is located in which state?",
+    "options": [
+      "Rajasthan",
+      "Gujarat",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Chhattisgarh"
+    ],
+    "answer": 2,
+    "explanation": "It is in **Madhya Pradesh**. \n*Why this is 'Sure Shot':* While not 'new' news, the project is ongoing (Cheetahs) and fits the Environment/Wildlife theme NABARD likes."
+  },
+  {
+    "section": "GA",
+    "topic": "Schemes - Budget",
+    "question": "What is the corpus of the 'Micro Irrigation Fund' (MIF) created with NABARD, as reiterated in the Budget documents?",
+    "options": [
+      "₹2,000 Cr",
+      "₹5,000 Cr",
+      "₹7,500 Cr",
+      "₹10,000 Cr",
+      "₹1,000 Cr"
+    ],
+    "answer": 1,
+    "explanation": "The initial corpus is **₹5,000 Crore**. \n*Note:* While there are talks of doubling it, the base corpus remains a standard question until the augmentation is officially gazetted."
+  }
+]
