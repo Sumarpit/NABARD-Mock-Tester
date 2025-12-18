@@ -1,0 +1,534 @@
+[
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Agro-climatic Zones",
+    "question": "Agro-climatic regions, as defined by the erstwhile Planning Commission, are based on variables like Climate and Growing Period. In contrast, Agro-Ecological Regions (AERs) classified by NBSS & LUP are based on four variables. Which are the two additional variables used?",
+    "options": [
+      "Annual Rainfall and Temperature Range",
+      "Forest Cover and Water Resources",
+      "Cropping Intensity and Irrigation Potential",
+      "Soil types and Landforms",
+      "Latitudinal Extent and Altitude"
+    ],
+    "answer": 3,
+    "explanation": "Agro-ecological regions are differentiated from agro-climatic regions by basing their classification on four variables: Climate, Growing Period, Soil types, and Landforms."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes - Research",
+    "question": "The Indian Council of Agricultural Research (ICAR) launched the National Agricultural Research Project (NARP) in 1979. What was the primary objective of this project regarding research stations?",
+    "options": [
+      "To standardize fertilizer recommendations across all states",
+      "To measure the economic impact of the Green Revolution",
+      "To set up or upgrade a zonal research station in each agro-climatic zone",
+      "To divide India into 15 macro-level zones based strictly on rainfall",
+      "To promote extensive cultivation over intensive cultivation"
+    ],
+    "answer": 2,
+    "explanation": "The objective of NARP was to set up or upgrade a zonal research station in each agro-climatic zone for generating location-specific, need-based research."
+  },
+  {
+    "section": "ARD",
+    "topic": "Soil Science",
+    "question": "On a volume basis, excluding water (which varies greatly), approximately what percentage of the soil volume is typically composed of Mineral Matter?",
+    "options": [
+      "1%",
+      "50%",
+      "5%",
+      "45%",
+      "25%"
+    ],
+    "answer": 3,
+    "explanation": "Soil is composed of five basic components. On a volume basis, Mineral matter accounts for approximately 45% of the total composition, with Organic matter ~5%, Air ~25%, and Water ~25%."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry - Cattle",
+    "question": "Indian cattle breeds are traditionally classified based on their primary utility. Which classification group describes breeds that are suitable for both milking and manual labor?",
+    "options": [
+      "Milch Breeds",
+      "Commercial Breeds",
+      "Draught Breeds",
+      "Dual-Purpose Breeds",
+      "Exotic Breeds"
+    ],
+    "answer": 3,
+    "explanation": "Dual-Purpose Breeds are suitable for both milking and manual labor (draught work). Milch breeds are for milk, and Draught breeds are for work."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry - Poultry",
+    "question": "In poultry farming, Cannibalism is a condition where birds attack their pen mates. What common management practice is implemented to prevent this?",
+    "options": [
+      "Molting",
+      "Dubbing",
+      "Pipping",
+      "Candling",
+      "Debeaking"
+    ],
+    "answer": 4,
+    "explanation": "Cannibalism is prevented by 'Debeaking' (beak trimming), typically done at 15 days of age and again at the 16th week to stop birds from pecking each other."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy",
+    "question": "Who is widely recognized for his significant contributions to field management and crop production, earning him the title 'Father of Agronomy'?",
+    "options": [
+      "George Johan Mendel",
+      "M.S. Swaminathan",
+      "Peter DeCrescenzi",
+      "T.H. Morgan",
+      "C. Subramaniam"
+    ],
+    "answer": 2,
+    "explanation": "Peter DeCrescenzi is known as the father of agronomy, which deals with the principles and practices of field management and crop production."
+  },
+  {
+    "section": "ARD",
+    "topic": "General Agriculture",
+    "question": "Which of the following agricultural revolutions is correctly matched with its primary objective or commodity?",
+    "options": [
+      "Gray Revolution: Egg production",
+      "Red Revolution: Milk production",
+      "Golden Fiber Revolution: Petroleum products",
+      "Blue Revolution: Fish production",
+      "Silver Revolution: Fertilizer production"
+    ],
+    "answer": 3,
+    "explanation": "The Blue Revolution is associated with Fish production. Gray is Fertilizer, Red is Meat/Tomato, Golden Fiber is Jute, and Silver is Egg."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Seeds",
+    "question": "Onion seeds are classified as requiring darkness to germinate. What is the technical term for this light response?",
+    "options": [
+      "Photo-inhibitory",
+      "Positively photoblastic",
+      "Photo-neutral",
+      "Negatively photoblastic",
+      "Thermoblastic"
+    ],
+    "answer": 3,
+    "explanation": "Seeds that require darkness to germinate, such as onions and peas, are referred to as negatively photoblastic (or light-inhibited)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Soil Science",
+    "question": "In the Munsell Soil Color System, what condition is typically indicated by White, Pale, or Bleached soil colors?",
+    "options": [
+      "High organic matter content",
+      "High content of ferric oxide",
+      "Leached soils (loss of iron/manganese)",
+      "High microbial activity",
+      "Strong blocky structure"
+    ],
+    "answer": 2,
+    "explanation": "White/Pale/Bleached soil colors indicate leached soils, where coloring agents like iron and manganese have been washed out by excessive rainfall."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Tillage",
+    "question": "What is the fundamental feature that defines 'Conservation Tillage' as opposed to conventional tillage?",
+    "options": [
+      "Increased soil disturbance",
+      "Applying liquid fertilizers",
+      "Minimal or eliminated soil disturbance",
+      "Complete inversion of soil",
+      "Reliance on heavy machinery"
+    ],
+    "answer": 2,
+    "explanation": "Conservation tillage is characterized by minimal or eliminated soil disturbance to preserve soil structure and reduce erosion."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Crops",
+    "question": "Which of the following crops is categorized as a 'restorative crop,' meaning it helps in replenishing soil fertility?",
+    "options": [
+      "Tobacco",
+      "Sorghum",
+      "Sunflower",
+      "Berseem",
+      "Cotton"
+    ],
+    "answer": 3,
+    "explanation": "Restorative crops, such as legumes like Berseem (fodder), help restore fertility by fixing atmospheric nitrogen through Rhizobium bacteria."
+  },
+  {
+    "section": "ARD",
+    "topic": "Forestry",
+    "question": "Tropical Moist Deciduous Forests are commercially the most exploited forest type in India. Which two tree species typically dominate this type?",
+    "options": [
+      "Chir Pine and Rhododendrons",
+      "Mahogany and Ebony",
+      "Babul and Ber",
+      "Sal and Teak",
+      "Manilkara and Casuarina"
+    ],
+    "answer": 3,
+    "explanation": "Sal (Shorea robusta) and Teak (Tectona grandis) are the dominant and commercially valuable species in Tropical Moist Deciduous Forests."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry - Nutrition",
+    "question": "Which category of feedstuffs contains less than 18 percent crude fiber and more than 60 percent Total Digestible Nutrients (TDN)?",
+    "options": [
+      "Dry roughages",
+      "Green roughages",
+      "Feed supplements",
+      "Concentrates",
+      "Feed additives"
+    ],
+    "answer": 3,
+    "explanation": "Concentrates are feedstuffs with low fiber (<18%) and high nutrient density (>60% TDN), unlike roughages."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Irrigation",
+    "question": "Which type of pressurized irrigation applies water slowly and directly to the root zone through small-diameter pipes and emitters?",
+    "options": [
+      "Sprinkler Irrigation",
+      "Bubbler Irrigation",
+      "Surge Irrigation",
+      "Drip Irrigation",
+      "Wild Flooding"
+    ],
+    "answer": 3,
+    "explanation": "Drip Irrigation (or trickle irrigation) applies water slowly and directly to the root zone, maximizing water use efficiency."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Irrigation",
+    "question": "What process involves applying fertilizer incorporated within the irrigation water, typically through a drip or sprinkler system?",
+    "options": [
+      "Top Dressing",
+      "Foliar application",
+      "Basal application",
+      "Fertigation",
+      "Plough sole placement"
+    ],
+    "answer": 3,
+    "explanation": "Fertigation is the application of fertilizers, soil amendments, or other water-soluble products through an irrigation system."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Cropping Systems",
+    "question": "In hilly regions, a farmer practices maize followed by potato and then peas, all within a single year. This system is an example of:",
+    "options": [
+      "Triple Cropping",
+      "Relay Cropping",
+      "Intercropping",
+      "Ratoon Cropping",
+      "Mixed Cropping"
+    ],
+    "answer": 0,
+    "explanation": "Growing three crops in sequence within a year is defined as Triple Cropping (a form of Multiple Cropping). The PDF also links this to Relay Cropping in some contexts if overlaps exist, but Triple is the direct count description."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry - Cattle",
+    "question": "The first milk produced by the cow immediately after calving, which is rich in antibodies, is known as:",
+    "options": [
+      "Lactose milk",
+      "Concentrate milk",
+      "Colostrum",
+      "Distilled milk",
+      "Transitional milk"
+    ],
+    "answer": 2,
+    "explanation": "Colostrum is the first milk produced after calving, crucial for providing passive immunity (antibodies) to the newborn calf."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry - Buffalo",
+    "question": "Which buffalo breed is distinctively recognized by its jet black body, tightly curled horns, and is highly valued for its high milk yield?",
+    "options": [
+      "Koshangadi",
+      "Jaffrabadi",
+      "Nili Ravi",
+      "Murrah",
+      "Surti"
+    ],
+    "answer": 3,
+    "explanation": "The Murrah breed is famous for its jet-black color and tightly curled (Jalebi-shaped) horns."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Seeds",
+    "question": "Epigeal germination is characterized by which specific anatomical movement during seed sprouting?",
+    "options": [
+      "Cotyledons remain underground",
+      "Epicotyl elongation",
+      "Hypocotyl elongation lifting the cotyledon",
+      "Germination in darkness only",
+      "No cotyledon movement"
+    ],
+    "answer": 2,
+    "explanation": "In epigeal germination, the hypocotyl elongates, pushing the cotyledons above the soil surface."
+  },
+  {
+    "section": "ARD",
+    "topic": "Soil Science - Erosion",
+    "question": "What type of water erosion involves the uniform removal of soil over a wide area by thin, concentrated surface water flow?",
+    "options": [
+      "Gully erosion",
+      "Splash erosion",
+      "Stream bank erosion",
+      "Rill erosion",
+      "Sheet erosion"
+    ],
+    "answer": 4,
+    "explanation": "Sheet erosion is the uniform removal of a thin layer of topsoil over a large area, often unnoticed until significant damage occurs."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry - Physiology",
+    "question": "What is the physiological process of the maintenance and continuation of milk production after it has been initiated?",
+    "options": [
+      "Lactogenesis",
+      "Involution",
+      "Pasteurization",
+      "Mammogenesis",
+      "Galactopoiesis"
+    ],
+    "answer": 4,
+    "explanation": "Galactopoiesis refers to the maintenance of milk production (lactation) once it has been established."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry - Diseases",
+    "question": "What metabolic disorder in high-yielding dairy cows, typically occurring close to calving, is caused by a low blood calcium level?",
+    "options": [
+      "Grass Tetany",
+      "Ketosis",
+      "Mastitis",
+      "Pica",
+      "Milk Fever"
+    ],
+    "answer": 4,
+    "explanation": "Milk Fever (Hypocalcemia) is a metabolic disease caused by low blood calcium levels around the time of calving."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy",
+    "question": "The branch of agricultural science dealing with crop production principles for maximum economic returns without deteriorating soil fertility is:",
+    "options": [
+      "Horticulture",
+      "Ecology",
+      "Soil Science",
+      "Agronomy",
+      "Crop Physiology"
+    ],
+    "answer": 3,
+    "explanation": "Agronomy is the science of soil management and crop production."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Tillage",
+    "question": "Which type of tilth is described as finely broken up and smooth, typically found in loamy soils?",
+    "options": [
+      "Coarse Tilth",
+      "Rough Tilth",
+      "Sandy Tilth",
+      "Fine Tilth",
+      "Moderate Tilth"
+    ],
+    "answer": 3,
+    "explanation": "Fine tilth refers to a smooth, friable soil structure ideal for small seeds."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Operations",
+    "question": "What practice involves moving soil around the base of plants like sugarcane and potatoes to provide support and prevent lodging?",
+    "options": [
+      "Thinning",
+      "Hoeing",
+      "Mulching",
+      "Earthing Up",
+      "Planking"
+    ],
+    "answer": 3,
+    "explanation": "Earthing Up is the technique of piling soil around the base of a plant to support it and promote root growth."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Cropping Systems",
+    "question": "The measure used to determine the advantage of an intercropping system, calculated as the sum of relative yields, is the:",
+    "options": [
+      "Cropping Intensity (CI)",
+      "Seed Multiplication Ratio (SMR)",
+      "Yield Index",
+      "Land Equivalent Ratio (LER)",
+      "Harvest Index"
+    ],
+    "answer": 3,
+    "explanation": "Land Equivalent Ratio (LER) measures the yield advantage of intercropping compared to growing the same crops separately."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Crops",
+    "question": "What type of crop is planted around the field of a main crop (e.g., safflower around gram) to protect it from trespassing animals or wind?",
+    "options": [
+      "Trap crop",
+      "Nurse crop",
+      "Border/guard crop",
+      "Complementary crop",
+      "Catch crop"
+    ],
+    "answer": 2,
+    "explanation": "Guard crops (or Border crops) are planted around the main crop to protect it from biotic or abiotic threats."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Water Management",
+    "question": "What strategy uses chemical compounds that form a physical barrier or thin film on the leaf surface to retard water escape?",
+    "options": [
+      "Stomatal Closing type",
+      "Reflectant type",
+      "Growth Retardant type",
+      "Film Forming type",
+      "Foliar fertilizer application"
+    ],
+    "answer": 3,
+    "explanation": "Film-forming anti-transpirants (e.g., waxes, silicon) create a physical barrier on leaves to reduce transpiration."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Water Management",
+    "question": "Which type of anti-transpirant is composed of white materials (like Kaoline) that increase leaf reflectance?",
+    "options": [
+      "Stomatal Closing type",
+      "Film Forming type",
+      "Growth Retardant type",
+      "Reflectant type",
+      "Metabolic Inhibitor type"
+    ],
+    "answer": 3,
+    "explanation": "Reflectant type anti-transpirants (e.g., Kaoline) reflect sunlight (increase albedo) to lower leaf temperature and reduce water loss."
+  },
+  {
+    "section": "ARD",
+    "topic": "General Agriculture",
+    "question": "Consider these statements: 1. Evergreen Revolution emphasises sustainability. 2. Golden Revolution is Jute. 3. Blue Revolution is Fish. Which are correct?",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "All of the above",
+      "Only 1"
+    ],
+    "answer": 1,
+    "explanation": "Statement 2 is incorrect (Golden is Horticulture/Honey; Jute is Golden Fiber). 1 and 3 are correct."
+  },
+  {
+    "section": "ARD",
+    "topic": "General Agriculture",
+    "question": "The Protein Revolution, termed the Second Green Revolution, was coined by whom?",
+    "options": [
+      "Sam Pitroda",
+      "Narendra Modi and Arun Jaitley",
+      "Verghese Kurien",
+      "Norman Borlaug",
+      "M. S. Swaminathan"
+    ],
+    "answer": 1,
+    "explanation": "The term 'Protein Revolution' was popularized by PM Narendra Modi and former FM Arun Jaitley to emphasize pulses and protein sources."
+  },
+  {
+    "section": "ARD",
+    "topic": "Fisheries",
+    "question": "What is the commercial rearing of fish in tanks or ponds known as?",
+    "options": [
+      "Sericulture",
+      "Mariculture",
+      "Aquaculture",
+      "Pisciculture",
+      "Apiculture"
+    ],
+    "answer": 3,
+    "explanation": "Pisciculture specifically refers to the breeding, rearing, and transplantation of fish by artificial means (tanks/ponds)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Sericulture",
+    "question": "The branch of agriculture known as Sericulture deals with the domestication of the silkworm, which has the scientific name:",
+    "options": [
+      "Apis mellifera",
+      "Laccifer lacca",
+      "Bombyx mori",
+      "Vigna radiata",
+      "Ananas sativus"
+    ],
+    "answer": 2,
+    "explanation": "Bombyx mori is the scientific name of the mulberry silkworm used in Sericulture."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Cropping",
+    "question": "In the Trans-Gangetic Plains, what is a representative cropping intensity (approx.) due to intensive irrigation?",
+    "options": [
+      "100%",
+      "115%",
+      "142%",
+      "160%",
+      "180%"
+    ],
+    "answer": 4,
+    "explanation": "The Trans-Gangetic Plains (Punjab, Haryana) have very high cropping intensity, often exceeding 180-190% due to irrigation."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agro-climatic Zones",
+    "question": "The average annual rainfall in the Eastern Himalayan Region ranges between:",
+    "options": [
+      "75-150 cm",
+      "100-200 cm",
+      "200-300 cm",
+      "300-500 cm",
+      "400-600 cm"
+    ],
+    "answer": 3,
+    "explanation": "The Eastern Himalayan region (Zone 2) is a high-rainfall zone, typically receiving heavy precipitation (often cited >200cm or 300-500cm range)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agro-climatic Zones",
+    "question": "Rajasthan belongs to which of the following zones?",
+    "options": [
+      "1 only",
+      "2 only",
+      "4 only",
+      "All of the above",
+      "2 only (Western dry zone)"
+    ],
+    "answer": 4,
+    "explanation": "Rajasthan largely falls under the Western Dry Zone (Zone 14) in the Planning Commission classification."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Economics",
+    "question": "If gross cropped area = 180 ha and net sown area = 120 ha, what is the cropping intensity?",
+    "options": [
+      "100%",
+      "120%",
+      "150%",
+      "160%",
+      "180%"
+    ],
+    "answer": 2,
+    "explanation": "Cropping Intensity = (Gross Cropped Area / Net Sown Area) * 100 = (180/120)*100 = 150%."
+  },
+  {
+    "section": "ARD",
+    "topic": "Botany",
+    "question": "Who introduced the binomial nomenclature (genus-species) system used in crop classification?",
+    "options": [
+      "Vavilov",
+      "Carolus Linnaeus",
+      "Borlaug",
+      "Swaminathan",
+      "Howard"
+    ],
+    "answer": 1,
+    "explanation": "Carolus Linnaeus introduced the system of binomial nomenclature for naming species."
+  }
+]

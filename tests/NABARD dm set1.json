@@ -1,0 +1,142 @@
+[
+  {
+    "section": "Decision Making",
+    "topic": "Management Models",
+    "question": "The concept of 'satisficing' (choosing an option that is satisfactory, but not necessarily optimal) is central to which decision-making model?",
+    "options": [
+      "Rational Model",
+      "Intuitive Model",
+      "Bounded Rationality Model",
+      "Incremental Model",
+      "The Economic Man Model"
+    ],
+    "answer": 2,
+    "explanation": "The Bounded Rationality Model (by Herbert Simon) recognizes that decision-makers are constrained by time and information, leading them to choose a 'good enough' (satisficing) solution."
+  },
+  {
+    "section": "Decision Making",
+    "topic": "Behavioral Biases",
+    "question": "If a manager overestimates the likelihood of a major failure simply because a high-profile failure happened recently in a competing firm, they are primarily exhibiting:",
+    "options": [
+      "Sunk Cost Fallacy",
+      "Anchoring Bias",
+      "Availability Heuristic",
+      "Hindsight Bias",
+      "Framing Effect"
+    ],
+    "answer": 2,
+    "explanation": "The Availability Heuristic (Bias) refers to the tendency to rely on immediate examples that come to mind (recent, vivid events) when evaluating a specific concept, method, or decision."
+  },
+  {
+    "section": "Decision Making",
+    "topic": "Leadership",
+    "question": "Which type of leader emphasizes clear goals, standards, and uses rewards and punishments to achieve desired outcomes?",
+    "options": [
+      "Transformational Leader",
+      "Charismatic Leader",
+      "Transactional Leader",
+      "Servant Leader",
+      "Autocratic Leader"
+    ],
+    "answer": 2,
+    "explanation": "Transactional leadership focuses on supervision, organization, and performance through a system of rewards and penalties (transactions)."
+  },
+  {
+    "section": "Decision Making",
+    "topic": "Scenario Analysis",
+    "question": "A team leader receives conflicting reports from two different departments about the feasibility of a new product launch. The leader should ideally first:",
+    "options": [
+      "Ignore the conflicting report that came from the lower-ranking department.",
+      "Request a joint meeting of the two departments to discuss data discrepancies.",
+      "Immediately cancel the launch to prevent risk.",
+      "Choose the report that confirms the CEO's original vision.",
+      "Delegate the decision to the HR department."
+    ],
+    "answer": 1,
+    "explanation": "The most rational and effective first step is to bring the conflicting parties together to resolve data discrepancies and establish a shared understanding of the facts (Option 1)."
+  },
+  {
+    "section": "Decision Making",
+    "topic": "Communication Barriers",
+    "question": "The process where a sender manipulates information so that the receiver will see it more favorably is known as:",
+    "options": [
+      "Noise",
+      "Filtering",
+      "Selective Perception",
+      "Channel Richness",
+      "Feedback"
+    ],
+    "answer": 1,
+    "explanation": "Filtering is the manipulation of information by the sender to make it look better to the receiver, often a major barrier to honest communication."
+  },
+  {
+    "section": "Decision Making",
+    "topic": "Ethical Scenarios",
+    "question": "A procurement officer discovers a minor violation of contract rules by a favored vendor that results in a slightly lower cost to the company. The most professional action is to:",
+    "options": [
+      "Ignore the violation since it benefitted the company financially.",
+      "Formally document and report the violation for consistent enforcement.",
+      "Ask the vendor to keep the violation a secret.",
+      "Impose a huge penalty to set an example.",
+      "Award the vendor more contracts immediately."
+    ],
+    "answer": 1,
+    "explanation": "Professional ethics demand consistent enforcement of rules. Documenting and reporting maintains transparency and integrity, regardless of the financial outcome."
+  },
+  {
+    "section": "Decision Making",
+    "topic": "Behavioral Biases",
+    "question": "When judging a candidate based heavily on a single positive trait (like their university degree), ignoring other performance metrics, the interviewer is suffering from:",
+    "options": [
+      "Recency Effect",
+      "Contrast Effect",
+      "Projection Bias",
+      "Halo Effect",
+      "Confirmation Bias"
+    ],
+    "answer": 3,
+    "explanation": "The Halo Effect occurs when a single positive characteristic (e.g., a prestigious degree or an attractive appearance) influences the assessment of all other traits."
+  },
+  {
+    "section": "Decision Making",
+    "topic": "Rationality",
+    "question": "What is the final step in the classic Rational Decision-Making Model?",
+    "options": [
+      "Generating alternatives",
+      "Evaluating the alternatives",
+      "Identifying the problem",
+      "Implementing and evaluating the decision",
+      "Allocating weights to criteria"
+    ],
+    "answer": 3,
+    "explanation": "The final step in the rational model, after making the choice, is to implement the decision and monitor its effectiveness (Evaluation)."
+  },
+  {
+    "section": "Decision Making",
+    "topic": "Types of Decisions",
+    "question": "Decisions that are unique, non-recurring, and require a custom-made solution are categorized as:",
+    "options": [
+      "Programmed Decisions",
+      "Routine Decisions",
+      "Strategic Decisions",
+      "Non-programmed Decisions",
+      "Operational Decisions"
+    ],
+    "answer": 3,
+    "explanation": "Non-programmed decisions deal with unusual or ill-defined problems and require creative problem-solving (e.g., launching a new product line)."
+  },
+  {
+    "section": "Decision Making",
+    "topic": "Decision Environment",
+    "question": "A situation where the decision-maker knows all the possible outcomes and the probability of each outcome is known is categorized as a decision under:",
+    "options": [
+      "Uncertainty",
+      "Risk",
+      "Certainty",
+      "Ambiguity",
+      "Conflict"
+    ],
+    "answer": 1,
+    "explanation": "Decision under **Risk** means the outcomes are known, and their probabilities can be assigned. Certainty means only one outcome is possible."
+  }
+]
