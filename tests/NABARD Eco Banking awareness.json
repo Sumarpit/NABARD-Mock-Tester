@@ -1,0 +1,282 @@
+[
+  {
+    "section": "Banking & Economy",
+    "topic": "Union Budget 2025-26",
+    "question": "As per the Union Budget 2025-26, the government has set the target for Agricultural Credit for the financial year 2025-26 at:",
+    "options": [
+      "₹16 Lakh Crore",
+      "₹18 Lakh Crore",
+      "₹20 Lakh Crore",
+      "₹22 Lakh Crore",
+      "₹25 Lakh Crore"
+    ],
+    "answer": 1,
+    "explanation": "The target is **₹18 Lakh Crore**. This is a critical figure for NABARD exams as it determines the flow of credit to the priority sector."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "RBI Appointments",
+    "question": "Who was appointed as the new Governor of the Reserve Bank of India (RBI) in December 2025, succeeding Shaktikanta Das?",
+    "options": [
+      "M. Rajeshwar Rao",
+      "T. Rabi Sankar",
+      "Sanjay Malhotra",
+      "Michael Patra",
+      "Viral Acharya"
+    ],
+    "answer": 2,
+    "explanation": "**Sanjay Malhotra** was appointed as the RBI Governor in December 2025. This is the most significant recent banking appointment."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "Priority Sector Lending (PSL)",
+    "question": "Under the Priority Sector Lending (PSL) norms, what is the mandatory target for Small Finance Banks (SFBs) regarding total Adjusted Net Bank Credit (ANBC)?",
+    "options": [
+      "40%",
+      "50%",
+      "60%",
+      "75%",
+      "85%"
+    ],
+    "answer": 3,
+    "explanation": "Small Finance Banks (SFBs) have a mandatory PSL target of **75%** of their ANBC, unlike commercial banks which have a target of 40%."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "Economic Survey 2024-25",
+    "question": "According to the Economic Survey 2024-25, the 'Services Sector' contributed approximately what percentage to India's Gross Value Added (GVA)?",
+    "options": [
+      "45%",
+      "48%",
+      "55%",
+      "60%",
+      "65%"
+    ],
+    "answer": 2,
+    "explanation": "The Services sector contributes approximately **55%** to India's GVA, remaining the key driver of economic growth."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "Digital Banking",
+    "question": "The RBI recently increased the transaction limit for 'UPI Lite' (offline wallet) to:",
+    "options": [
+      "₹200",
+      "₹500",
+      "₹1,000",
+      "₹2,000",
+      "₹5,000"
+    ],
+    "answer": 1,
+    "explanation": "The per-transaction limit for UPI Lite was enhanced to **₹500** (from ₹200) to encourage wider adoption of small-value digital payments."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "Financial Inclusion",
+    "question": "The 'UDGAM' portal, launched by RBI, helps the public to:",
+    "options": [
+      "File complaints against banks",
+      "Search for unclaimed deposits",
+      "Apply for Mudra loans",
+      "Check credit score",
+      "Exchange mutilated notes"
+    ],
+    "answer": 1,
+    "explanation": "**UDGAM** (Unclaimed Deposits – Gateway to Access inforMation) allows users to search for unclaimed deposits across multiple banks in one place."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "NABARD Annual Report 2024-25",
+    "question": "What is the Capital to Risk-Weighted Assets Ratio (CRAR) of NABARD as of March 31, 2025?",
+    "options": [
+      "9.00%",
+      "15.50%",
+      "18.75%",
+      "22.10%",
+      "25.58%"
+    ],
+    "answer": 4,
+    "explanation": "NABARD reported a robust CRAR of **25.58%**, which is significantly higher than the regulatory requirement of 9%."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "Union Budget 2025-26",
+    "question": "The Fiscal Deficit target for the year 2025-26 is set at ____ of GDP.",
+    "options": [
+      "5.1%",
+      "4.8%",
+      "4.5%",
+      "4.4%",
+      "3.5%"
+    ],
+    "answer": 3,
+    "explanation": "The target is **4.4%** of GDP, following a glide path of fiscal consolidation."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "Banking Regulation",
+    "question": "Which category of banks are NOT required to maintain the Capital Conservation Buffer (CCB) under Basel III norms?",
+    "options": [
+      "Public Sector Banks",
+      "Private Sector Banks",
+      "Small Finance Banks",
+      "Regional Rural Banks (RRBs)",
+      "Foreign Banks"
+    ],
+    "answer": 3,
+    "explanation": "Currently, **Regional Rural Banks (RRBs)** are not required to maintain the Capital Conservation Buffer (CCB), although they must maintain a minimum CRAR of 9%."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "Government Schemes",
+    "question": "Under the 'PM Mudra Yojana', a new loan category 'Tarun Plus' was introduced for loans ranging from:",
+    "options": [
+      "₹5 Lakh to ₹10 Lakh",
+      "₹10 Lakh to ₹20 Lakh",
+      "₹20 Lakh to ₹50 Lakh",
+      "₹10 Lakh to ₹15 Lakh",
+      "₹25 Lakh to ₹1 Crore"
+    ],
+    "answer": 1,
+    "explanation": "The 'Tarun Plus' category covers loans above **₹10 Lakh up to ₹20 Lakh** for entrepreneurs who have repaid previous loans successfully."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "RBI Guidelines",
+    "question": "The 'D-SIB' (Domestic Systemically Important Banks) list released by RBI in 2025 includes which three banks?",
+    "options": [
+      "SBI, PNB, BOB",
+      "SBI, HDFC, Axis",
+      "SBI, HDFC, ICICI",
+      "SBI, ICICI, Kotak",
+      "HDFC, ICICI, Axis"
+    ],
+    "answer": 2,
+    "explanation": "The list continues to include **SBI, HDFC Bank, and ICICI Bank** as D-SIBs (Too Big To Fail)."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "Financial Institutions",
+    "question": "Which institution releases the 'Financial Inclusion Index' (FI-Index) annually?",
+    "options": [
+      "NITI Aayog",
+      "Ministry of Finance",
+      "Reserve Bank of India (RBI)",
+      "NABARD",
+      "World Bank"
+    ],
+    "answer": 2,
+    "explanation": "The **RBI** releases the annual Financial Inclusion Index (FI-Index) to capture the extent of financial inclusion in the country."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "Payment Systems",
+    "question": "Which of the following acts as the 'Settlement Agency' for the Aadhaar Enabled Payment System (AePS)?",
+    "options": [
+      "UIDAI",
+      "RBI",
+      "NPCI",
+      "State Bank of India",
+      "IDRBT"
+    ],
+    "answer": 2,
+    "explanation": "**NPCI** (National Payments Corporation of India) is the clearing and settlement agency for AePS transactions."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "Deposit Insurance",
+    "question": "What is the maximum deposit insurance cover provided by DICGC per depositor per bank?",
+    "options": [
+      "₹1 Lakh",
+      "₹2 Lakh",
+      "₹5 Lakh",
+      "₹10 Lakh",
+      "₹25 Lakh"
+    ],
+    "answer": 2,
+    "explanation": "The insurance cover is **₹5 Lakh** per depositor per bank (covering both principal and interest)."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "Rural Banking",
+    "question": "The 'Short Term Cooperative Rural Credit (Refinance) Fund' is maintained by which institution?",
+    "options": [
+      "RBI",
+      "NABARD",
+      "Ministry of Cooperation",
+      "SBI",
+      "SIDBI"
+    ],
+    "answer": 1,
+    "explanation": "This fund is maintained by **NABARD** to provide refinance for seasonal agricultural operations."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "RBI Tools",
+    "question": "The RBI uses 'Variable Rate Reverse Repo' (VRRR) auctions primarily to:",
+    "options": [
+      "Inject liquidity into the system",
+      "Absorb excess liquidity from the system",
+      "Control long-term interest rates",
+      "Provide emergency funds to banks",
+      "Manage forex reserves"
+    ],
+    "answer": 1,
+    "explanation": "VRRR auctions are used to **absorb excess liquidity** from the banking system to align the overnight call money rate with the Repo rate."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "Currency & Coins",
+    "question": "Who is the final authority to decide on the design, form, and material of bank notes in India?",
+    "options": [
+      "RBI Governor",
+      "Central Board of RBI",
+      "Central Government",
+      "Currency Note Press",
+      "Finance Minister"
+    ],
+    "answer": 2,
+    "explanation": "The **Central Government**, on the recommendation of the Central Board of the RBI, approves the design, form, and material of bank notes (Section 25 of RBI Act)."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "International Economy",
+    "question": "Which organization releases the 'B-Ready' (Business Ready) report, which replaced the 'Ease of Doing Business' report?",
+    "options": [
+      "World Economic Forum",
+      "IMF",
+      "World Bank",
+      "WTO",
+      "UNCTAD"
+    ],
+    "answer": 2,
+    "explanation": "The **World Bank** launched the 'Business Ready' (B-Ready) project to replace the discontinued Ease of Doing Business report."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "RBI - Static",
+    "question": "Which section of the RBI Act, 1934 empowers the Central Government to give directions to the RBI in public interest?",
+    "options": [
+      "Section 7",
+      "Section 17",
+      "Section 21",
+      "Section 45",
+      "Section 24"
+    ],
+    "answer": 0,
+    "explanation": "**Section 7** empowers the Central Govt to issue directions to the RBI after consultation with the Governor, if necessary in public interest."
+  },
+  {
+    "section": "Banking & Economy",
+    "topic": "Schemes - Social Security",
+    "question": "What is the maximum pension amount available under the 'Atal Pension Yojana' (APY)?",
+    "options": [
+      "₹1,000 per month",
+      "₹3,000 per month",
+      "₹5,000 per month",
+      "₹10,000 per month",
+      "₹2,000 per month"
+    ],
+    "answer": 2,
+    "explanation": "The maximum guaranteed pension under APY is **₹5,000 per month** (slabs are ₹1k, ₹2k, ₹3k, ₹4k, ₹5k)."
+  }
+]
