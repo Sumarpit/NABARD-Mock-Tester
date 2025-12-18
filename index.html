@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>NABARD Exam Tool (v29 - Cloud & Search)</title>
+    <title>NABARD Exam Tool (v30 - Sticky Footer)</title>
     <link rel="manifest" href="manifest.json">
     <style>
         :root {
@@ -15,6 +15,7 @@
             --correct: #2ecc71;
             --wrong: #e74c3c;
             --cloud: #17a2b8;
+            --footer-height: 80px;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
@@ -30,7 +31,8 @@
         #exam-screen.active { display: flex; } 
 
         /* --- 1. UPLOAD SCREEN & LIBRARY --- */
-        .container-box { max-width: 900px; margin: 20px auto; padding: 0 20px 80px 20px; }
+        /* Padding bottom must match footer height + extra space */
+        .container-box { max-width: 900px; margin: 20px auto; padding: 0 20px 140px 20px; }
         
         /* SEARCH & TABS */
         .filter-bar { margin-bottom: 20px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
@@ -41,7 +43,6 @@
 
         .library-box { background: var(--card-bg); padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center; margin-bottom: 20px; }
         
-        /* Multi-Select Toggle */
         .lib-controls { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
         .toggle-btn { background: #eee; color: #333; padding: 6px 12px; border-radius: 20px; cursor: pointer; border: 1px solid #ccc; font-size: 0.85rem; display: flex; align-items: center; gap: 5px; }
         .toggle-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
@@ -55,42 +56,61 @@
         .file-card:hover { transform: translateY(-2px); border-color: var(--accent); }
         .file-card.active { border: 2px solid var(--accent); background: #e3f2fd; }
         
-        /* Cloud Styling */
         .file-card.cloud { border-left: 4px solid var(--cloud); }
         .cloud-badge { position: absolute; top: 5px; right: 5px; font-size: 1.2rem; color: var(--cloud); }
         .local-badge { position: absolute; top: 5px; right: 5px; font-size: 1.2rem; color: #aaa; }
         
         .file-name { font-weight: bold; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 5px; word-break: break-word; padding-right: 15px; }
-        
         .file-meta { font-size: 0.75rem; color: #777; display: block; }
         .del-file { position: absolute; bottom: 5px; right: 5px; color: #aaa; font-size: 1.2rem; line-height: 1; padding: 5px; z-index: 5; }
         .del-file:hover { color: var(--wrong); }
 
-        /* Multi Select Check */
         .file-card.multi-selected { border: 2px solid var(--accent); background: #e3f2fd; }
         .multi-check { position: absolute; top: 5px; right: 5px; background: var(--accent); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; display: none; }
         .file-card.multi-selected .multi-check { display: flex; }
-        .file-card.multi-selected .cloud-badge { display: none; } /* Hide cloud icon when selected */
+        .file-card.multi-selected .cloud-badge { display: none; } 
 
-        .settings-box { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center; margin-bottom: 20px; }
-        .time-inputs { display: flex; justify-content: center; gap: 10px; margin: 15px 0; }
-        .time-box { width: 60px; padding: 10px; text-align: center; font-size: 1.2rem; border: 1px solid #ddd; border-radius: 4px; }
+        /* --- STICKY FOOTER --- */
+        .fixed-footer {
+            position: fixed; bottom: 0; left: 0; width: 100%;
+            background: #fff; border-top: 1px solid #ccc;
+            padding: 10px 15px;
+            display: flex; align-items: center; justify-content: space-between; gap: 10px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            z-index: 2000;
+            padding-bottom: calc(10px + env(safe-area-inset-bottom));
+        }
+
+        .footer-left { display: flex; flex-direction: column; gap: 2px; }
+        .footer-label { font-size: 0.75rem; font-weight: bold; color: #666; }
+        .time-row { display: flex; align-items: center; gap: 5px; }
+        .mini-input { width: 45px; padding: 5px; text-align: center; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; font-weight: bold; }
+        .colon { font-weight: bold; color: #888; }
+
+        .footer-right { flex: 1; display: flex; gap: 5px; justify-content: flex-end; }
         
+        .start-btn { 
+            flex: 1; max-width: 200px; height: 45px; 
+            background: var(--accent); color: white; font-weight: bold; 
+            border: none; border-radius: 6px; font-size: 1rem; cursor: pointer; 
+        }
+        .start-btn:disabled { background: #ccc; cursor: not-allowed; }
+        .resume-btn { height: 45px; padding: 0 15px; background: #f39c12; color: white; border: none; border-radius: 6px; font-weight: bold; display: none; }
+
+        /* HISTORY */
         .history-box { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
         table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
         th, td { padding: 12px; border-bottom: 1px solid #eee; text-align: left; }
         th { background: #f8f9fa; color: #666; font-weight: 600; }
 
-        button { cursor: pointer; border: none; padding: 10px 20px; border-radius: 4px; font-size: 14px; transition: 0.2s; color: white; }
-        button.primary { background: var(--accent); }
-        button.primary:hover { background: #0056b3; }
-        button.primary:disabled { background: #ccc; cursor: not-allowed; }
-        button.resume { background: #f39c12; margin-left: 10px; display: none; }
-        button.retake { background: #27ae60; padding: 6px 12px; font-size: 0.8rem; }
-        button.review { background: #6c757d; }
-        button.clear { background: transparent; color: #e74c3c; text-decoration: underline; margin-top: 10px; padding: 0; }
-
-        /* --- 2. EXAM HEADER --- */
+        button.clear { background: transparent; color: #e74c3c; text-decoration: underline; margin-top: 10px; padding: 0; border: none; cursor:pointer;}
+        button.retake { background: #27ae60; padding: 6px 12px; font-size: 0.8rem; color: white; border:none; border-radius:4px; cursor:pointer;}
+        
+        /* GENERAL UI */
+        button.primary { background: var(--accent); color: white; padding: 10px 20px; border-radius: 4px; border:none;}
+        button.review { background: #6c757d; color: white; padding: 10px 20px; border-radius: 4px; border:none;}
+        
+        /* EXAM HEADER */
         header { 
             height: 60px; background: var(--header-bg); color: white; 
             display: flex; align-items: center; justify-content: space-between; 
@@ -105,7 +125,7 @@
         .timer.critical { background: #e74c3c; color: white; animation: pulse 1s infinite; }
         .timer.review-timer { color: #ffc107; border-color: #ffc107; }
         
-        /* --- EXAM LAYOUT --- */
+        /* EXAM LAYOUT */
         .exam-layout { display: flex; flex: 1; width: 100%; overflow: hidden; background: #e9ecef; position: relative; }
         .pane-passage { flex: 1; background: #fffbf2; padding: 25px; overflow-y: auto; border-right: 1px solid #ddd; font-family: Georgia, serif; line-height: 1.6; display: none; }
         .pane-passage.active { display: block; }
@@ -128,16 +148,16 @@
         .pal-btn.ans { background: var(--correct); color: white; border: none; }
         .pal-btn.visit { background: #e74c3c; color: white; border: none; }
         .pal-btn.current { border: 2px solid #333; }
-
+        
         .conf-box { margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 6px; opacity: 0.5; pointer-events: none; }
         .conf-box.active { opacity: 1; pointer-events: auto; background: #e3f2fd; }
         .conf-opts { display: flex; gap: 5px; margin-top: 10px; }
         .c-btn { flex: 1; padding: 6px; font-size: 0.8rem; border: 1px solid #ccc; background: white; border-radius: 4px; cursor: pointer; text-align: center; }
         .c-btn.sel { background: #673ab7; color: white; border-color: #5e35b1; }
 
-        /* --- MOBILE NAV & RESULTS --- */
+        /* MOBILE NAV & RESULTS */
         .mobile-nav { display: none; height: 60px; background: #fff; border-top: 1px solid #ccc; align-items: center; justify-content: space-around; flex-shrink: 0; z-index: 3000; padding-bottom: env(safe-area-inset-bottom); }
-        .mn-btn { background: transparent; color: #555; font-size: 1.2rem; padding: 10px; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; }
+        .mn-btn { background: transparent; color: #555; font-size: 1.2rem; padding: 10px; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border:none; }
         .mn-btn.primary { color: var(--accent); font-weight: bold; font-size: 1.5rem; }
         .mobile-menu { display: none; background: transparent; font-size: 1.5rem; margin-left: 10px; border:none; color: white;}
         
@@ -201,19 +221,6 @@
             <div id="file-grid" class="file-grid"></div>
         </div>
 
-        <div class="settings-box">
-            <label style="font-weight:bold;">Exam Duration (HH:MM:SS)</label>
-            <div class="time-inputs">
-                <input type="number" id="hInput" class="time-box" value="00" min="0">
-                <span style="font-weight:bold; padding-top:10px;">:</span>
-                <input type="number" id="mInput" class="time-box" value="05" min="0" max="59">
-                <span style="font-weight:bold; padding-top:10px;">:</span>
-                <input type="number" id="sInput" class="time-box" value="00" min="0" max="59">
-            </div>
-            <button class="primary" id="start-btn" onclick="startExam()" disabled>Select a Test Above</button>
-            <button class="resume" id="resume-btn" onclick="resumeExam()">Resume</button>
-        </div>
-
         <div class="history-box">
             <h3 style="text-align:center; margin-bottom:15px;">Recent Results</h3>
             <table id="history-table">
@@ -222,6 +229,23 @@
             </table>
             <div id="no-history" style="text-align:center; color:#999; margin-top:10px;">No history found.</div>
             <div style="text-align:center;"><button class="clear" onclick="clearHistory()">Clear History</button></div>
+        </div>
+    </div>
+
+    <div class="fixed-footer">
+        <div class="footer-left">
+            <span class="footer-label">Duration (H:M:S)</span>
+            <div class="time-row">
+                <input type="number" id="hInput" class="mini-input" value="00" min="0">
+                <span class="colon">:</span>
+                <input type="number" id="mInput" class="mini-input" value="05" min="0" max="59">
+                <span class="colon">:</span>
+                <input type="number" id="sInput" class="mini-input" value="00" min="0" max="59">
+            </div>
+        </div>
+        <div class="footer-right">
+            <button class="resume-btn" id="resume-btn" onclick="resumeExam()">RESUME</button>
+            <button class="start-btn" id="start-btn" onclick="startExam()" disabled>SELECT TEST</button>
         </div>
     </div>
 </div>
@@ -260,7 +284,7 @@
             </div>
 
             <div style="margin-top:auto; padding-top:20px; display:flex; justify-content:space-between;">
-                <button onclick="clearRes()" style="background:#e74c3c;">Clear</button>
+                <button onclick="clearRes()" style="background:#e74c3c; border:none; padding:10px; color:white; border-radius:4px;">Clear</button>
                 <button class="primary" onclick="nextQ()" id="next-btn">Save & Next</button>
             </div>
         </div>
@@ -327,18 +351,17 @@
 
 <script>
     // --- KEY VARIABLES ---
-    const KEY = 'nabard_v29_data';
-    const HIST = 'nabard_v29_hist';
-    const LIB_KEY = 'nabard_v29_library';
+    const KEY = 'nabard_v30_data';
+    const HIST = 'nabard_v30_hist';
+    const LIB_KEY = 'nabard_v30_library';
     
     let library = {}, cloudList = [], activeFile = '', questions = [], currIdx = 0;
     let responses = {}, confidence = {}, visited = {};
     let timer, seconds = 0;
     let isMultiMode = false, selectedFiles = new Set();
     let isReviewMode = false, reviewSet = [];
-    let currentTab = 'all'; // 'all', 'local', 'cloud'
+    let currentTab = 'all'; 
 
-    // --- PWA HANDLERS ---
     if ('launchQueue' in window) {
         window.launchQueue.setConsumer(async (launchParams) => {
             if (!launchParams.files.length) return;
@@ -348,13 +371,12 @@
     }
     if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 
-    // --- SWIPE ---
     let touchStartX=0, touchEndX=0;
     
     window.onload = () => { 
         try { 
             loadLibraryFromStorage(); 
-            loadCloudManifest(); // Fetch Cloud List
+            loadCloudManifest(); 
             loadHistory(); 
             checkResume(); 
             
@@ -374,7 +396,7 @@
         fetch('test_manifest.json')
             .then(res => res.json())
             .then(data => {
-                cloudList = data; // ["tests/ARD.json", ...]
+                cloudList = data;
                 renderGrid();
             })
             .catch(err => console.log('No cloud manifest found'));
@@ -383,27 +405,26 @@
     async function downloadCloudFile(path) {
         if(confirm("Download and open this test from Cloud?")) {
             const btn = document.getElementById('start-btn');
-            btn.innerText = "Downloading...";
+            const originalText = btn.innerText;
+            btn.innerText = "DL...";
             try {
                 const res = await fetch(path);
                 const data = await res.json();
                 
-                // Add to local library
                 const fileName = path.split('/').pop();
                 library[fileName] = data;
                 saveLibraryToStorage();
                 
-                // Select it
                 activeFile = fileName;
                 renderGrid();
                 
-                // Auto Select
-                document.getElementById('start-btn').innerText = 'Start: ' + fileName.replace(/\.json$/i,'');
+                // Select Automatically
+                document.getElementById('start-btn').innerText = 'START: ' + fileName.replace(/\.json$/i,'').substring(0,10);
                 document.getElementById('start-btn').disabled = false;
                 
             } catch(e) {
                 alert("Download failed: " + e.message);
-                btn.innerText = "Select a Test";
+                btn.innerText = originalText;
             }
         }
     }
@@ -422,7 +443,6 @@
         
         let displayList = [];
 
-        // 1. Process Local Files
         if (currentTab === 'all' || currentTab === 'local') {
             Object.keys(library).forEach(name => {
                 if(name.toLowerCase().includes(search)) {
@@ -431,17 +451,15 @@
             });
         }
 
-        // 2. Process Cloud Files (exclude if already in local)
         if (currentTab === 'all' || currentTab === 'cloud') {
             cloudList.forEach(path => {
                 const name = path.split('/').pop();
-                if(!library[name] && name.toLowerCase().includes(search)) { // Only show if not downloaded
+                if(!library[name] && name.toLowerCase().includes(search)) { 
                     displayList.push({ type: 'cloud', name: name, path: path });
                 }
             });
         }
 
-        // 3. Render Cards
         displayList.forEach(item => {
             const d = document.createElement('div');
             
@@ -470,11 +488,9 @@
             grid.appendChild(d);
         });
         
-        // Show message if empty
         if(displayList.length === 0) grid.innerHTML = '<div style="color:#999; padding:20px;">No tests found.</div>';
     }
 
-    // --- STANDARD FUNCTIONS (Unchanged logic) ---
     document.getElementById('jsonFile').onchange = (e) => loadFiles(e.target.files);
     
     function loadLibraryFromStorage() {
@@ -509,7 +525,7 @@
         document.getElementById('multiToggle').classList.toggle('active');
         renderGrid();
         document.getElementById('start-btn').disabled = true;
-        document.getElementById('start-btn').innerText = "Select a Test Above";
+        document.getElementById('start-btn').innerText = "SELECT TEST";
     }
 
     function handleCardClick(name) {
@@ -518,12 +534,14 @@
             const btn = document.getElementById('start-btn');
             if (selectedFiles.size > 0) {
                 let totalQs = 0; selectedFiles.forEach(f => totalQs += library[f].length);
-                btn.innerText = `Start Combined (${selectedFiles.size} files, ${totalQs} Qs)`;
+                btn.innerText = `START COMBINED`;
                 btn.disabled = false;
-            } else { btn.innerText = "Select Files"; btn.disabled = true; }
+            } else { btn.innerText = "SELECT TEST"; btn.disabled = true; }
         } else {
             activeFile = name;
-            document.getElementById('start-btn').innerText = 'Start: ' + name.replace(/\.json$/i,'');
+            // Truncate name for button
+            let shortName = name.replace(/\.json$/i,'').substring(0,10) + (name.length>10?'...':'');
+            document.getElementById('start-btn').innerText = 'START: ' + shortName;
             document.getElementById('start-btn').disabled = false;
         }
         renderGrid();
