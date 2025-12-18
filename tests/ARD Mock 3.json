@@ -1,0 +1,562 @@
+[
+  {
+    "section": "ARD",
+    "topic": "Schemes - Budget 2025-26",
+    "question": "In the Union Budget 2025-26, the Government has enhanced the 'Agriculture Credit Target' to what amount to ensure ample credit flow to the farming sector?",
+    "options": [
+      "₹20 Lakh Crore",
+      "₹22 Lakh Crore",
+      "₹25 Lakh Crore",
+      "₹18 Lakh Crore",
+      "₹30 Lakh Crore"
+    ],
+    "answer": 1,
+    "explanation": "The Agriculture Credit Target for FY 2025-26 has been increased to ₹22 Lakh Crore (up from ₹20 Lakh Crore in FY25)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Cropping Systems",
+    "question": "Which cropping system involves growing two or more crops simultaneously on the same land without any definite row pattern?",
+    "options": [
+      "Intercropping",
+      "Mixed Cropping",
+      "Relay Cropping",
+      "Alley Cropping",
+      "Sequential Cropping"
+    ],
+    "answer": 1,
+    "explanation": "Mixed Cropping involves growing crops simultaneously with no specific row arrangement. Intercropping has a definite row pattern."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry - Cattle",
+    "question": "Consider the following statements about the 'Sahiwal' cattle breed:\n1. It is indigenous to the Montgomery district of Pakistan.\n2. It is known as 'Lola' due to its loose skin.\n3. It is a pure draught purpose breed.\nWhich of the above statements is/are correct?",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": 1,
+    "explanation": "Statement 3 is incorrect. Sahiwal is one of the best 'Milch' (milk-producing) breeds, not a draught breed."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes - PM-PRANAM",
+    "question": "The 'PM-PRANAM' scheme was launched to incentivize states to reduce the use of chemical fertilizers. What does the acronym stand for?",
+    "options": [
+      "Programme for Restoration, Awareness, Nourishment and Amelioration of Mother Earth",
+      "Pradhan Mantri Programme for Regenerative Agriculture and Nutrient Management",
+      "Programme for Rejuvenation of Agriculture and Nature through Alternative Methods",
+      "Promotion of Research in Agriculture and Natural Manure",
+      "None of the above"
+    ],
+    "answer": 0,
+    "explanation": "PM-PRANAM stands for 'Programme for Restoration, Awareness, Nourishment and Amelioration of Mother Earth'."
+  },
+  {
+    "section": "ARD",
+    "topic": "Horticulture - Varieties",
+    "question": "Which Mango variety is a cross between 'Dashehari' and 'Neelum' and is specifically recommended for 'High Density Planting'?",
+    "options": [
+      "Mallika",
+      "Amrapali",
+      "Ratna",
+      "Sindhu",
+      "Arka Aruna"
+    ],
+    "answer": 1,
+    "explanation": "Amrapali (Dashehari x Neelum) is a dwarf variety suitable for high-density planting (1600 plants/ha)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Soil Science",
+    "question": "Which of the following soil types is locally known as 'Regur' and is most suitable for dry farming due to its high moisture retention capacity?",
+    "options": [
+      "Red Soil",
+      "Laterite Soil",
+      "Alluvial Soil",
+      "Black Soil",
+      "Desert Soil"
+    ],
+    "answer": 3,
+    "explanation": "Black Soil (Regur) swells when wet and shrinks when dry (self-ploughing), making it excellent for dryland farming."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes - PM-JANMAN",
+    "question": "The 'PM-JANMAN' scheme targets the holistic development of PVTGs. How many 'Particularly Vulnerable Tribal Groups' (PVTGs) have been identified in India?",
+    "options": [
+      "50",
+      "65",
+      "75",
+      "82",
+      "90"
+    ],
+    "answer": 2,
+    "explanation": "There are 75 identified PVTGs in India spread across 18 states and 1 UT."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry - Poultry",
+    "question": "Which term describes the process of shedding old feathers in poultry, which is often followed by a pause in egg production?",
+    "options": [
+      "Brooding",
+      "Molting",
+      "Culling",
+      "Hatching",
+      "Debeaking"
+    ],
+    "answer": 1,
+    "explanation": "Molting is the natural physiological process of shedding old feathers and growing new ones."
+  },
+  {
+    "section": "ARD",
+    "topic": "Fisheries",
+    "question": "Under the 'Pradhan Mantri Matsya Sampada Yojana' (PMMSY), what is the target for fish production by FY 2024-25?",
+    "options": [
+      "18 Million Tonnes",
+      "20 Million Tonnes",
+      "22 Million Tonnes",
+      "25 Million Tonnes",
+      "30 Million Tonnes"
+    ],
+    "answer": 2,
+    "explanation": "The target under PMMSY is to achieve 22 Million Tonnes of fish production by 2024-25."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agri Engineering",
+    "question": "Which pump is most suitable for lifting water from deep tube wells where the suction head exceeds 8 meters?",
+    "options": [
+      "Centrifugal Pump",
+      "Submersible Pump",
+      "Reciprocating Pump",
+      "Rotary Pump",
+      "Propeller Pump"
+    ],
+    "answer": 1,
+    "explanation": "Submersible pumps are used for deep wells as standard centrifugal pumps cannot lift water if the suction head is >8m."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes - MGNREGA",
+    "question": "In the Union Budget 2025-26, the allocation for MGNREGA has been maintained at approximately:",
+    "options": [
+      "₹60,000 Cr",
+      "₹73,000 Cr",
+      "₹86,000 Cr",
+      "₹1,00,000 Cr",
+      "₹50,000 Cr"
+    ],
+    "answer": 2,
+    "explanation": "The allocation is maintained around ₹86,000 Crore (matching the Revised Estimates of the previous year)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Plant Pathology",
+    "question": "'White Bud' in Maize is a deficiency symptom caused by the lack of:",
+    "options": [
+      "Iron",
+      "Zinc",
+      "Boron",
+      "Magnesium",
+      "Nitrogen"
+    ],
+    "answer": 1,
+    "explanation": "White Bud in Maize is a classic indicator of Zinc deficiency."
+  },
+  {
+    "section": "ARD",
+    "topic": "Forestry",
+    "question": "In the context of 'agroforestry', what does 'Silvipasture' refer to?",
+    "options": [
+      "Trees + Crops",
+      "Trees + Animals (Pasture)",
+      "Trees + Crops + Animals",
+      "Fruit Trees + Crops",
+      "Trees + Fish"
+    ],
+    "answer": 1,
+    "explanation": "Silvipasture is the integration of Trees (Silvi) and Pasture/Animals."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes - AIF",
+    "question": "The 'Agriculture Infrastructure Fund' (AIF) provides credit guarantees for loans up to what limit for eligible borrowers?",
+    "options": [
+      "₹1 Crore",
+      "₹2 Crore",
+      "₹5 Crore",
+      "₹10 Crore",
+      "₹50 Lakh"
+    ],
+    "answer": 1,
+    "explanation": "Credit Guarantee coverage under CGTMSE is available for loans up to ₹2 Crore."
+  },
+  {
+    "section": "ARD",
+    "topic": "Horticulture",
+    "question": "Which chemical is used for the 'degreening' of citrus fruits?",
+    "options": [
+      "Gibberellic Acid",
+      "Ethylene",
+      "Cytokinin",
+      "NAA",
+      "Paclobutrazol"
+    ],
+    "answer": 1,
+    "explanation": "Ethylene is used for degreening (breaking down chlorophyll) to reveal the fruit's color."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry - Buffalo",
+    "question": "Which buffalo breed is known for its tightly curved 'Jalebi' shaped horns?",
+    "options": [
+      "Surti",
+      "Jaffrabadi",
+      "Murrah",
+      "Nili Ravi",
+      "Mehsana"
+    ],
+    "answer": 2,
+    "explanation": "Murrah buffaloes are famous for their spirally curved (Jalebi-shaped) horns."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes - KCC",
+    "question": "Under the Kisan Credit Card (KCC) scheme, what is the limit for 'collateral-free' agricultural loans?",
+    "options": [
+      "₹1.00 Lakh",
+      "₹1.60 Lakh",
+      "₹2.00 Lakh",
+      "₹3.00 Lakh",
+      "₹50,000"
+    ],
+    "answer": 1,
+    "explanation": "The limit for collateral-free loans is ₹1.60 Lakh."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Nutrients",
+    "question": "Which of the following is a 'Beneficial Element' (not essential) specifically required for Rice?",
+    "options": [
+      "Sodium",
+      "Silicon",
+      "Vanadium",
+      "Cobalt",
+      "Selenium"
+    ],
+    "answer": 1,
+    "explanation": "Silicon is a beneficial element for Rice, providing resistance against lodging and pests."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes - PMFBY",
+    "question": "In the event of 'Prevented Sowing/Planting' due to adverse weather, what percentage of the sum insured is payable as immediate relief under PMFBY?",
+    "options": [
+      "15%",
+      "25%",
+      "35%",
+      "50%",
+      "10%"
+    ],
+    "answer": 1,
+    "explanation": "25% of the Sum Insured is paid for prevented sowing/planting risks."
+  },
+  {
+    "section": "ARD",
+    "topic": "Rural Development",
+    "question": "According to the SECC 2011, what percentage of rural households are landless and derive a major part of their income from manual casual labour?",
+    "options": [
+      "22%",
+      "30%",
+      "45%",
+      "56%",
+      "10%"
+    ],
+    "answer": 1,
+    "explanation": "Approx 30% (29.97%) of rural households are landless casual labourers."
+  },
+  {
+    "section": "ARD",
+    "topic": "Horticulture - Post Harvest",
+    "question": "What is the recommended storage temperature for Potatoes to prevent sprouting and sweetening?",
+    "options": [
+      "0-2°C",
+      "3-5°C",
+      "7-10°C",
+      "12-15°C",
+      "-5°C"
+    ],
+    "answer": 2,
+    "explanation": "7-10°C is ideal. Lower temps (<5°C) cause 'Cold Sweetening' (starch converts to sugar)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes - e-NAM",
+    "question": "The 'Platform of Platforms' (PoP) module was launched under e-NAM to facilitate:",
+    "options": [
+      "Export of agri-products",
+      "Integration of Service Providers (Logistics, Quality, etc.)",
+      "Direct Benefit Transfer",
+      "Soil Testing",
+      "Crop Insurance"
+    ],
+    "answer": 1,
+    "explanation": "PoP integrates service providers (logistics, fintech, etc.) into the e-NAM ecosystem."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry - Diseases",
+    "question": "Which vaccine is administered to poultry to prevent 'Marek's Disease'?",
+    "options": [
+      "F1 Strain",
+      "HVT (Herpes Virus of Turkey) vaccine",
+      "Lasota",
+      "R2B",
+      "Fowl Pox Vaccine"
+    ],
+    "answer": 1,
+    "explanation": "HVT vaccine is given to day-old chicks to prevent Marek's Disease."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Irrigation",
+    "question": "Which irrigation method has the highest 'Water Use Efficiency'?",
+    "options": [
+      "Sprinkler",
+      "Drip",
+      "Furrow",
+      "Flood",
+      "Surge"
+    ],
+    "answer": 1,
+    "explanation": "Drip irrigation has 90-95% efficiency."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes - NRLM",
+    "question": "The 'Revolving Fund' (RF) provided to SHGs under DAY-NRLM is a minimum of:",
+    "options": [
+      "₹10,000",
+      "₹15,000",
+      "₹20,000",
+      "₹50,000",
+      "₹5,000"
+    ],
+    "answer": 2,
+    "explanation": "RF has been enhanced to a minimum of ₹20,000 (and up to ₹30,000)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Soil Science",
+    "question": "The C:N ratio of normal agricultural soil is approximately:",
+    "options": [
+      "5:1",
+      "10:1 to 12:1",
+      "20:1",
+      "40:1",
+      "80:1"
+    ],
+    "answer": 1,
+    "explanation": "The Carbon:Nitrogen ratio of stable soil organic matter is typically 10:1 to 12:1."
+  },
+  {
+    "section": "ARD",
+    "topic": "Horticulture - Planting",
+    "question": "Which planting system accommodates 15% more plants than the Square system?",
+    "options": [
+      "Rectangular",
+      "Quincunx",
+      "Hexagonal",
+      "Contour",
+      "Triangular"
+    ],
+    "answer": 2,
+    "explanation": "The Hexagonal (Septuple) system accommodates 15% more plants."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes - PM-KUSUM",
+    "question": "Component C of PM-KUSUM scheme focuses on:",
+    "options": [
+      "Solarizing individual grid-connected pumps",
+      "Setting up small solar power plants",
+      "Installing standalone solar pumps",
+      "Solar street lighting",
+      "Distribution of solar lanterns"
+    ],
+    "answer": 0,
+    "explanation": "Component C deals with the solarization of existing grid-connected agriculture pumps."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry - Sheep",
+    "question": "Which sheep breed is famous for the finest 'Carpet Wool' in India?",
+    "options": [
+      "Marwari",
+      "Chokla",
+      "Magra",
+      "Patanwadi",
+      "Nellore"
+    ],
+    "answer": 1,
+    "explanation": "Chokla is known as the 'Indian Merino' and produces the finest carpet wool."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes - Extension",
+    "question": "Which of the following bodies is the 'Apex Body' for monitoring and coordinating KVKs at the Zonal level?",
+    "options": [
+      "ATARI (Agricultural Technology Application Research Institute)",
+      "Zonal Project Directorate",
+      "State Agriculture University",
+      "NABARD",
+      "MANAGE"
+    ],
+    "answer": 0,
+    "explanation": "ATARI (formerly Zonal Project Directorates) coordinates KVKs."
+  },
+  {
+    "section": "ARD",
+    "topic": "Fisheries",
+    "question": "The scientific name 'Macrobrachium rosenbergii' refers to:",
+    "options": [
+      "Tiger Prawn",
+      "Giant Freshwater Prawn",
+      "White Shrimp",
+      "Mud Crab",
+      "Oyster"
+    ],
+    "answer": 1,
+    "explanation": "Macrobrachium rosenbergii is the Giant Freshwater Prawn (Scampi)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Seeds",
+    "question": "'Breeder Seed' is the progeny of Nucleus seed. Which colour tag denotes Breeder Seed?",
+    "options": [
+      "White",
+      "Blue",
+      "Golden Yellow",
+      "Purple",
+      "Green"
+    ],
+    "answer": 2,
+    "explanation": "Breeder Seed has a Golden Yellow tag. Foundation has White. Certified has Blue."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes - Soil Health Card",
+    "question": "Soil Health Cards are to be renewed for farmers every _____ years.",
+    "options": [
+      "2 years",
+      "3 years",
+      "4 years",
+      "5 years",
+      "1 year"
+    ],
+    "answer": 0,
+    "explanation": "According to the cycle 2 guidelines, SHCs are issued every 2 years."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry - Diseases",
+    "question": "Which of the following is a Zoonotic disease (transmissible from animals to humans)?",
+    "options": [
+      "Rinderpest",
+      "FMD",
+      "Brucellosis",
+      "Black Quarter",
+      "Ranikhet"
+    ],
+    "answer": 2,
+    "explanation": "Brucellosis is a classic zoonotic disease causing Undulant Fever in humans."
+  },
+  {
+    "section": "ARD",
+    "topic": "Horticulture",
+    "question": "'Pusa Nanha' is a dwarf variety of Papaya developed through:",
+    "options": [
+      "Hybridization",
+      "Selection",
+      "Mutation Breeding",
+      "Introduction",
+      "Genetic Engineering"
+    ],
+    "answer": 2,
+    "explanation": "Pusa Nanha is a mutant variety (gamma radiation) suitable for high density planting."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes - PM-Virasat",
+    "question": "The scheme 'PM-Virasat' (Pradhan Mantri Virasat Ka Samvardhan) is under the Ministry of:",
+    "options": [
+      "Ministry of Culture",
+      "Ministry of Minority Affairs",
+      "Ministry of Textiles",
+      "Ministry of Skill Development",
+      "Ministry of Rural Development"
+    ],
+    "answer": 1,
+    "explanation": "PM-Virasat is a scheme of the Ministry of Minority Affairs, focusing on skill development and education."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Weeds",
+    "question": "Which of the following is an example of a 'Total Root Parasite'?",
+    "options": [
+      "Cuscuta",
+      "Loranthus",
+      "Orobanche",
+      "Striga",
+      "Parthenium"
+    ],
+    "answer": 2,
+    "explanation": "Orobanche (Broomrape) is a Total Root Parasite. Striga is semi-root. Cuscuta is total stem."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes - Agri Infra",
+    "question": "What is the corpus of the 'Micro Irrigation Fund' (MIF) created with NABARD?",
+    "options": [
+      "₹2,000 Cr",
+      "₹5,000 Cr",
+      "₹10,000 Cr",
+      "₹7,500 Cr",
+      "₹1,000 Cr"
+    ],
+    "answer": 1,
+    "explanation": "The initial corpus was ₹5,000 Crore (Budget 2025-26 may double it, but the base static fact is 5k)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry - Goat",
+    "question": "Which goat breed is famous for its 'Roman Nose' and long pendulous ears?",
+    "options": [
+      "Beetal",
+      "Jamunapari",
+      "Barbari",
+      "Black Bengal",
+      "Sirohi"
+    ],
+    "answer": 1,
+    "explanation": "Jamunapari (The Pride of India) is identified by its convex face (Roman nose)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy - Crops",
+    "question": "Which state has the largest area under Micro-Irrigation in India?",
+    "options": [
+      "Maharashtra",
+      "Rajasthan",
+      "Karnataka",
+      "Tamil Nadu",
+      "Gujarat"
+    ],
+    "answer": 2,
+    "explanation": "Karnataka often tops the list in total area covered under micro-irrigation, closely followed by Tamil Nadu/Maharashtra."
+  }
+]

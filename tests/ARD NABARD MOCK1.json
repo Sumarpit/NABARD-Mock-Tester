@@ -1,0 +1,562 @@
+[
+  {
+    "section": "ARD",
+    "topic": "Schemes (PMFBY)",
+    "question": "Under the Pradhan Mantri Fasal Bima Yojana (PMFBY), what is the uniform premium rate to be paid by farmers for all Commercial and Horticultural crops?",
+    "options": [
+      "1.5%",
+      "2.0%",
+      "5.0%",
+      "1.0%",
+      "2.5%"
+    ],
+    "answer": 2,
+    "explanation": "Premium rates under PMFBY: Kharif crops (2.0%), Rabi crops (1.5%), and Annual Commercial/Horticultural crops (5.0%)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy (Crops)",
+    "question": "Which of the following crops is highly sensitive to water stagnation and requires 'puddling' primarily to reduce percolation losses?",
+    "options": [
+      "Wheat",
+      "Maize",
+      "Paddy (Rice)",
+      "Cotton",
+      "Sugarcane"
+    ],
+    "answer": 2,
+    "explanation": "Puddling is the churning of soil in standing water primarily done for Rice to reduce water percolation losses and control weeds."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry (Breeds)",
+    "question": "Which of the following is a famous 'Draught purpose' breed of cattle, known for its speed and agility, originating from Tamil Nadu?",
+    "options": [
+      "Sahiwal",
+      "Gir",
+      "Kangayam",
+      "Murrah",
+      "Tharparkar"
+    ],
+    "answer": 2,
+    "explanation": "Kangayam is a popular draught breed from Tamil Nadu (Erode/Coimbatore). Sahiwal and Gir are milch breeds. Murrah is a buffalo breed."
+  },
+  {
+    "section": "ARD",
+    "topic": "Soil Science",
+    "question": "The process of removal of land surface by water in the form of small finger-like channels, which can be smoothed out by normal tillage operations, is known as:",
+    "options": [
+      "Splash Erosion",
+      "Sheet Erosion",
+      "Rill Erosion",
+      "Gully Erosion",
+      "Stream Bank Erosion"
+    ],
+    "answer": 2,
+    "explanation": "Rill erosion forms small channels. If not checked, it advances to Gully erosion (which cannot be smoothed by tillage)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Fisheries",
+    "question": "Which revolution in India is associated with the integrated development of the Fisheries sector?",
+    "options": [
+      "Pink Revolution",
+      "Blue Revolution",
+      "Yellow Revolution",
+      "Silver Revolution",
+      "Brown Revolution"
+    ],
+    "answer": 1,
+    "explanation": "Blue Revolution relates to Fisheries. Pink is Prawn/Onion/Meat. Yellow is Oilseeds. Silver is Egg/Poultry."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes (NRLM)",
+    "question": "Under Deendayal Antyodaya Yojana - National Rural Livelihoods Mission (DAY-NRLM), the 'Revolving Fund' (RF) provided to eligible SHGs is a minimum of:",
+    "options": [
+      "₹10,000 to ₹15,000",
+      "₹20,000 to ₹30,000",
+      "₹50,000",
+      "₹1.0 Lakh",
+      "₹5,000"
+    ],
+    "answer": 1,
+    "explanation": "The Revolving Fund (RF) provided to SHGs has been enhanced to a minimum of ₹20,000 and maximum of ₹30,000 per SHG (earlier it was ₹10k-15k)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Horticulture",
+    "question": "'Amrapali' is a famous hybrid variety of Mango, developed from the cross between:",
+    "options": [
+      "Neelam x Dashehari",
+      "Dashehari x Neelam",
+      "Ratna x Alphonso",
+      "Neelam x Alphonso",
+      "Bangalora x Alphonso"
+    ],
+    "answer": 1,
+    "explanation": "Amrapali is a cross of Dashehari x Neelam (DNA). Mallika is a cross of Neelam x Dashehari (MND). It is known for high-density planting."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agri Data (Production)",
+    "question": "As per the recent Basic Animal Husbandry Statistics (2024-25), which state is the largest producer of Milk in India?",
+    "options": [
+      "Rajasthan",
+      "Uttar Pradesh",
+      "Madhya Pradesh",
+      "Gujarat",
+      "Andhra Pradesh"
+    ],
+    "answer": 1,
+    "explanation": "Uttar Pradesh retains the top spot in milk production (~15.7% share), closely followed by Rajasthan."
+  },
+  {
+    "section": "ARD",
+    "topic": "Soil Science (Nutrients)",
+    "question": "Which micronutrient deficiency causes 'Khaira Disease' in Rice?",
+    "options": [
+      "Iron",
+      "Zinc",
+      "Boron",
+      "Molybdenum",
+      "Copper"
+    ],
+    "answer": 1,
+    "explanation": "Khaira disease in rice is characterized by reddish-brown pigmentation and is caused by Zinc deficiency."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes (PM-KISAN)",
+    "question": "Who among the following categories is EXCLUDED from receiving benefits under the PM-KISAN scheme?",
+    "options": [
+      "Small Farmers with <2 hectares land",
+      "Marginal Farmers with <1 hectare land",
+      "Institutional Landholders",
+      "Farmers aged above 60 years",
+      "Farmers growing commercial crops"
+    ],
+    "answer": 2,
+    "explanation": "Institutional Landholders, Constitutional post holders, Ministers, and Income Tax payers are excluded from PM-KISAN."
+  },
+  {
+    "section": "ARD",
+    "topic": "Forestry",
+    "question": "The practice of growing agricultural crops along with forest trees on the same unit of land is known as:",
+    "options": [
+      "Silviculture",
+      "Agroforestry",
+      "Social Forestry",
+      "Farm Forestry",
+      "Monoculture"
+    ],
+    "answer": 1,
+    "explanation": "Agroforestry is the interaction of agriculture and trees (forestry) to diversify and sustain production."
+  },
+  {
+    "section": "ARD",
+    "topic": "Irrigation",
+    "question": "Which irrigation method has the highest 'Water Use Efficiency' (90-95%)?",
+    "options": [
+      "Flood Irrigation",
+      "Sprinkler Irrigation",
+      "Drip Irrigation",
+      "Furrow Irrigation",
+      "Check Basin"
+    ],
+    "answer": 2,
+    "explanation": "Drip Irrigation delivers water directly to the root zone, minimizing evaporation and runoff, achieving 90-95% efficiency."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes (KCC)",
+    "question": "Under the Kisan Credit Card (KCC) scheme, what is the limit for 'Collateral-free' agricultural loans?",
+    "options": [
+      "₹1.0 Lakh",
+      "₹1.60 Lakh",
+      "₹2.0 Lakh",
+      "₹3.0 Lakh",
+      "₹50,000"
+    ],
+    "answer": 1,
+    "explanation": "The limit for collateral-free agriculture loans is ₹1.60 Lakh (enhanced from ₹1 Lakh)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Poultry",
+    "question": "The 'Central Avian Research Institute' (CARI) is located at:",
+    "options": [
+      "Karnal, Haryana",
+      "Izatnagar, Uttar Pradesh",
+      "Anand, Gujarat",
+      "Hyderabad, Telangana",
+      "Bhopal, MP"
+    ],
+    "answer": 1,
+    "explanation": "CARI is located in Izatnagar, Bareilly (UP), along with IVRI (Indian Veterinary Research Institute)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agri Finance",
+    "question": "What is the target for 'Ground Level Credit' (GLC) for Agriculture fixed by the Government for FY 2025-26 (as per Interim trends)?",
+    "options": [
+      "₹18 Lakh Crore",
+      "₹20 Lakh Crore",
+      "₹22 Lakh Crore",
+      "₹25 Lakh Crore",
+      "₹15 Lakh Crore"
+    ],
+    "answer": 2,
+    "explanation": "The target has been consistently increasing. For FY25, it was ₹22-22.5 Lakh Crore (approx/projected based on previous trend of ₹20L Cr in FY24)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Horticulture (PHT)",
+    "question": "Which chemical is commonly used for the 'degreening' and faster ripening of fruits like Banana and Mango?",
+    "options": [
+      "Ethylene",
+      "Cytokinin",
+      "Gibberellin",
+      "Abscisic Acid",
+      "Auxin"
+    ],
+    "answer": 0,
+    "explanation": "Ethylene is the gaseous hormone responsible for fruit ripening."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes (AIF)",
+    "question": "The 'Agriculture Infrastructure Fund' (AIF) provides interest subvention of ____% per annum on loans up to ₹2 Crore.",
+    "options": [
+      "2%",
+      "3%",
+      "4%",
+      "5%",
+      "1%"
+    ],
+    "answer": 1,
+    "explanation": "AIF provides a 3% interest subvention for a period of 7 years on loans up to ₹2 Crore."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy (Crops)",
+    "question": "Which crop is known as 'White Gold' in India?",
+    "options": [
+      "Sugarcane",
+      "Cotton",
+      "Milk",
+      "Jute",
+      "Rubber"
+    ],
+    "answer": 1,
+    "explanation": "Cotton is referred to as White Gold due to its high commercial value."
+  },
+  {
+    "section": "ARD",
+    "topic": "Reports (NABARD)",
+    "question": "According to the NABARD Annual Report 2024-25, the total Balance Sheet size of NABARD stood at approximately:",
+    "options": [
+      "₹7.5 Lakh Crore",
+      "₹8.2 Lakh Crore",
+      "₹9.8 Lakh Crore",
+      "₹12.5 Lakh Crore",
+      "₹6.5 Lakh Crore"
+    ],
+    "answer": 2,
+    "explanation": "NABARD's balance sheet size reached ₹9.84 Lakh Crore in FY 2024-25."
+  },
+  {
+    "section": "ARD",
+    "topic": "Fisheries",
+    "question": "Which Indian state has the highest 'Inland' fish production?",
+    "options": [
+      "Gujarat",
+      "Kerala",
+      "Andhra Pradesh",
+      "West Bengal",
+      "Tamil Nadu"
+    ],
+    "answer": 2,
+    "explanation": "Andhra Pradesh is the leader in total and Inland fish production. Gujarat leads in Marine fish production."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes (PMMSY)",
+    "question": "The 'Pradhan Mantri Matsya Sampada Yojana' (PMMSY) aims to increase fish production to ____ Million Tonnes by 2024-25.",
+    "options": [
+      "18 MT",
+      "20 MT",
+      "22 MT",
+      "25 MT",
+      "30 MT"
+    ],
+    "answer": 2,
+    "explanation": "The target under PMMSY was to reach 22 Million Tonnes by FY 2024-25."
+  },
+  {
+    "section": "ARD",
+    "topic": "Soil Science",
+    "question": "Which soil type covers the largest area in India?",
+    "options": [
+      "Black Soil",
+      "Red Soil",
+      "Alluvial Soil",
+      "Laterite Soil",
+      "Desert Soil"
+    ],
+    "answer": 2,
+    "explanation": "Alluvial soil covers about 45-46% of India's total land area, making it the most extensive group."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes (e-NAM)",
+    "question": "e-NAM (National Agriculture Market) is a Pan-India electronic trading portal networked with the existing APMC mandis. Which agency implements e-NAM?",
+    "options": [
+      "NABARD",
+      "FCI",
+      "SFAC",
+      "NAFED",
+      "NCDC"
+    ],
+    "answer": 2,
+    "explanation": "Small Farmers Agribusiness Consortium (SFAC) is the lead implementing agency for e-NAM."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry",
+    "question": "The gestation period of a Buffalo is approximately:",
+    "options": [
+      "280 days",
+      "310 days",
+      "150 days",
+      "114 days",
+      "365 days"
+    ],
+    "answer": 1,
+    "explanation": "Buffalo: ~310 days. Cow: ~280 days. Goat: ~150 days. Pig: ~114 days."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes (Misc)",
+    "question": "Which scheme was launched in 2023 to promote the usage of alternative fertilizers and restoration of mother earth?",
+    "options": [
+      "PM-POSHAN",
+      "PM-PRANAM",
+      "PM-KUSUM",
+      "PM-DEVINE",
+      "GOBARdhan"
+    ],
+    "answer": 1,
+    "explanation": "PM-PRANAM (Programme for Restoration, Awareness, Nourishment and Amelioration of Mother Earth) focuses on balanced fertilizer use."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy",
+    "question": "Seed Rate of Wheat (normal sowing) is approximately:",
+    "options": [
+      "25-30 kg/ha",
+      "40-50 kg/ha",
+      "100-125 kg/ha",
+      "75-80 kg/ha",
+      "150-200 kg/ha"
+    ],
+    "answer": 2,
+    "explanation": "The normal seed rate for wheat is 100 kg/ha. For late sowing, it is increased to 125 kg/ha."
+  },
+  {
+    "section": "ARD",
+    "topic": "Rural Development",
+    "question": "As per Socio-Economic Caste Census (SECC) 2011, what percentage of rural households are 'Landless with derivation of major income from manual casual labour'?",
+    "options": [
+      "10%",
+      "22%",
+      "30%",
+      "45%",
+      "56%"
+    ],
+    "answer": 2,
+    "explanation": "According to SECC 2011, nearly 30% (29.97%) of rural households are landless and rely on manual casual labor."
+  },
+  {
+    "section": "ARD",
+    "topic": "Horticulture",
+    "question": "Which system of planting accommodates the maximum number of plants per unit area (15% more than Square system)?",
+    "options": [
+      "Square System",
+      "Rectangular System",
+      "Hexagonal System",
+      "Quincunx System",
+      "Contour System"
+    ],
+    "answer": 2,
+    "explanation": "Hexagonal (or Septuple) system accommodates 15% more plants than the Square system."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes (MGNREGA)",
+    "question": "Under MGNREGA, the ratio of wage material costs (Wage:Material) should be maintained at:",
+    "options": [
+      "50:50",
+      "60:40",
+      "40:60",
+      "75:25",
+      "90:10"
+    ],
+    "answer": 1,
+    "explanation": "The ratio of wage to material costs should be maintained at 60:40 at the Gram Panchayat level."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agri Engineering",
+    "question": "In a tractor, the 'PTO' shaft stands for:",
+    "options": [
+      "Power Take Off",
+      "Power Transmission Output",
+      "Primary Tillage Operator",
+      "Power Traction Only",
+      "Piston Turnover"
+    ],
+    "answer": 0,
+    "explanation": "PTO (Power Take Off) transfers power from the tractor engine to attached implements (like rotavator, thresher)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Miscellaneous",
+    "question": "The 'Yellow Revolution' is associated with the production of:",
+    "options": [
+      "Solar Energy",
+      "Oilseeds",
+      "Eggs",
+      "Turmeric",
+      "Gold"
+    ],
+    "answer": 1,
+    "explanation": "Yellow Revolution = Oilseeds (Mustard, Sesame, etc.)."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes (PM-KUSUM)",
+    "question": "Which component of PM-KUSUM scheme focuses on 'Solarization of existing Grid-connected Agriculture Pumps'?",
+    "options": [
+      "Component A",
+      "Component B",
+      "Component C",
+      "Component D",
+      "Component E"
+    ],
+    "answer": 2,
+    "explanation": "Component A: Decentralized power plants. Component B: Standalone solar pumps. Component C: Solarization of grid-connected pumps."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agronomy",
+    "question": "Which of the following is a 'C4 plant', known for high photosynthetic efficiency?",
+    "options": [
+      "Rice",
+      "Wheat",
+      "Maize",
+      "Soybean",
+      "Barley"
+    ],
+    "answer": 2,
+    "explanation": "Maize, Sugarcane, and Sorghum are classic C4 plants (tropical adaptation). Rice and Wheat are C3 plants."
+  },
+  {
+    "section": "ARD",
+    "topic": "Forestry",
+    "question": "As per India State of Forest Report (ISFR) 2021, which state has the highest forest cover in terms of 'Percentage' of its geographical area?",
+    "options": [
+      "Madhya Pradesh",
+      "Arunachal Pradesh",
+      "Mizoram",
+      "Chhattisgarh",
+      "Odisha"
+    ],
+    "answer": 2,
+    "explanation": "Mizoram has the highest % forest cover (>84%). Madhya Pradesh has the highest 'Area' under forest."
+  },
+  {
+    "section": "ARD",
+    "topic": "Animal Husbandry",
+    "question": "The 'Ranikhet' disease primarily affects which livestock?",
+    "options": [
+      "Cattle",
+      "Sheep",
+      "Poultry",
+      "Pigs",
+      "Horses"
+    ],
+    "answer": 2,
+    "explanation": "Ranikhet (Newcastle disease) is a highly contagious viral disease affecting Poultry."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes (Misc)",
+    "question": "SWAMITVA scheme, dealing with surveying of rural inhabited lands, falls under which Ministry?",
+    "options": [
+      "Ministry of Agriculture",
+      "Ministry of Rural Development",
+      "Ministry of Panchayati Raj",
+      "Ministry of Housing & Urban Affairs",
+      "NITI Aayog"
+    ],
+    "answer": 2,
+    "explanation": "SWAMITVA is a Central Sector scheme of the Ministry of Panchayati Raj."
+  },
+  {
+    "section": "ARD",
+    "topic": "Fisheries",
+    "question": "The scientific name of the Indian Major Carp commonly known as 'Rohu' is:",
+    "options": [
+      "Catla catla",
+      "Labeo rohita",
+      "Cirrhinus mrigala",
+      "Cyprinus carpio",
+      "Clarias batrachus"
+    ],
+    "answer": 1,
+    "explanation": "Rohu = Labeo rohita. Catla = Catla catla. Mrigal = Cirrhinus mrigala."
+  },
+  {
+    "section": "ARD",
+    "topic": "Schemes (Budget)",
+    "question": "In the Union Budget 2025-26, the allocation for MGNREGA was approximately:",
+    "options": [
+      "₹60,000 Cr",
+      "₹86,000 Cr",
+      "₹73,000 Cr",
+      "₹1,00,000 Cr",
+      "₹40,000 Cr"
+    ],
+    "answer": 1,
+    "explanation": "Recent budgets have hovered around ₹86,000 Cr (Revised Estimate levels). Note: Actual number depends on the specific Feb 2025 document, but 86k is the trend benchmark."
+  },
+  {
+    "section": "ARD",
+    "topic": "Extension",
+    "question": "Which of the following is the 'First Line Extension System' of the ICAR?",
+    "options": [
+      "Kisan Call Center",
+      "Krishi Vigyan Kendra (KVK)",
+      "ATMA",
+      "NSSO",
+      "NGOs"
+    ],
+    "answer": 1,
+    "explanation": "KVKs are the frontline extension system for testing and demonstration of technology."
+  },
+  {
+    "section": "ARD",
+    "topic": "Agri Data (MSP)",
+    "question": "The Minimum Support Price (MSP) is recommended by:",
+    "options": [
+      "NABARD",
+      "CCEA",
+      "CACP",
+      "Ministry of Finance",
+      "FCI"
+    ],
+    "answer": 2,
+    "explanation": "CACP (Commission for Agricultural Costs and Prices) *recommends* MSP. CCEA (Cabinet Committee on Economic Affairs) *approves* it."
+  }
+]

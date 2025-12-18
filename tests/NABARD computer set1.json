@@ -1,0 +1,282 @@
+[
+  {
+    "section": "Computer Knowledge",
+    "topic": "Networking",
+    "question": "Which of the following layers in the OSI model is responsible for packet routing and addressing between different networks?",
+    "options": [
+      "Data Link Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Network Layer",
+      "Session Layer"
+    ],
+    "answer": 3,
+    "explanation": "The Network Layer (Layer 3) handles the logical addressing (IP addresses) and routing of data packets across different networks."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "MS Office Shortcuts",
+    "question": "In MS Word, which shortcut key combination is used to open the 'Find and Replace' dialog box with the 'Go To' tab activated?",
+    "options": [
+      "Ctrl + F",
+      "Ctrl + H",
+      "Ctrl + G",
+      "F5",
+      "Ctrl + R"
+    ],
+    "answer": 2,
+    "explanation": "Ctrl + G is the shortcut key for the 'Go To' tab within the Find and Replace dialog box. F5 is also commonly used for 'Go To'."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "Malware & Security",
+    "question": "A type of malicious software that blocks access to a computer system or data, usually by encrypting it, until a sum of money is paid is called:",
+    "options": [
+      "Trojan Horse",
+      "Spyware",
+      "Rootkit",
+      "Ransomware",
+      "Worm"
+    ],
+    "answer": 3,
+    "explanation": "Ransomware is designed to hold data hostage until the victim pays a 'ransom,' often in cryptocurrency."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "Hardware & Memory",
+    "question": "Which type of computer memory is volatile and acts as the primary working memory for the CPU, holding the data and instructions currently being used?",
+    "options": [
+      "ROM",
+      "Hard Disk Drive (HDD)",
+      "Random Access Memory (RAM)",
+      "Solid State Drive (SSD)",
+      "Cache Memory"
+    ],
+    "answer": 2,
+    "explanation": "RAM is the system's volatile, fast working memory. Data stored here is lost when power is off."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "Internet",
+    "question": "What is the primary protocol used to transfer hypertext documents (web pages) on the World Wide Web?",
+    "options": [
+      "FTP",
+      "SMTP",
+      "Telnet",
+      "TCP",
+      "HTTP"
+    ],
+    "answer": 4,
+    "explanation": "HTTP (Hypertext Transfer Protocol) or its secure version HTTPS is fundamental for data communication on the web."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "MS Excel",
+    "question": "Which of the following MS Excel functions is used to calculate the number of cells that contain numbers and dates?",
+    "options": [
+      "COUNT",
+      "COUNTA",
+      "COUNTIF",
+      "COUNTBLANK",
+      "SUM"
+    ],
+    "answer": 0,
+    "explanation": "The COUNT function tallies cells containing numerical data (including dates and currencies). COUNTA counts all non-empty cells."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "Ports & Interfaces",
+    "question": "The term USB stands for:",
+    "options": [
+      "Universal Serial Bus",
+      "Uniform Server Block",
+      "User System Backup",
+      "Unit Serial Bus",
+      "Universal Service Buffer"
+    ],
+    "answer": 0,
+    "explanation": "USB is an industry standard for connection cables and protocols for communication."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "Networking",
+    "question": "A device that operates at the Data Link layer of the OSI model and forwards data based on MAC addresses is a:",
+    "options": [
+      "Router",
+      "Hub",
+      "Gateway",
+      "Bridge/Switch",
+      "Modem"
+    ],
+    "answer": 3,
+    "explanation": "Switches/Bridges operate at Layer 2 (Data Link) and use MAC addresses to forward frames within a local network (LAN)."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "Software & OS",
+    "question": "The software component that manages the computer's hardware, memory, and processes, acting as the interface between hardware and application programs, is the:",
+    "options": [
+      "Browser",
+      "Device Driver",
+      "Operating System (OS)",
+      "Antivirus",
+      "Utility Software"
+    ],
+    "answer": 2,
+    "explanation": "The Operating System (e.g., Windows, Linux) is the core software that manages all fundamental resources."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "Input/Output",
+    "question": "Which of the following is strictly an output device?",
+    "options": [
+      "Touchscreen",
+      "Light Pen",
+      "Plotter",
+      "Scanner",
+      "Barcode Reader"
+    ],
+    "answer": 2,
+    "explanation": "A Plotter is used for drawing vector graphics and large diagrams (output). A Touchscreen is both input and output."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "MS PowerPoint",
+    "question": "In MS PowerPoint, the view that displays all the slides in a miniature format for easy sorting and organization is called:",
+    "options": [
+      "Normal View",
+      "Reading View",
+      "Slide Show View",
+      "Slide Sorter View",
+      "Outline View"
+    ],
+    "answer": 3,
+    "explanation": "Slide Sorter View shows thumbnails of all slides, allowing the user to quickly rearrange or delete them."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "Networking",
+    "question": "In the URL `http://www.nabard.org/schemes/home.html`, what part represents the domain name?",
+    "options": [
+      "http",
+      "www.nabard.org",
+      "/schemes/home.html",
+      "org",
+      "nabard"
+    ],
+    "answer": 1,
+    "explanation": "The domain name is the unique identifier of the website, which is `www.nabard.org`."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "Storage",
+    "question": "Which storage unit is the largest?",
+    "options": [
+      "Kilobyte (KB)",
+      "Gigabyte (GB)",
+      "Terabyte (TB)",
+      "Megabyte (MB)",
+      "Petabyte (PB)"
+    ],
+    "answer": 4,
+    "explanation": "The order of size is KB < MB < GB < TB < PB. Petabyte (PB) is $2^{50}$ bytes."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "Security",
+    "question": "A digital mechanism used to verify the authenticity and integrity of a message or document is called a:",
+    "options": [
+      "Firewall",
+      "Digital Certificate",
+      "Digital Signature",
+      "Proxy Server",
+      "VPN"
+    ],
+    "answer": 2,
+    "explanation": "A Digital Signature ensures that the message has not been altered and verifies the sender's identity."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "Programming",
+    "question": "Which of the following is a Low-Level Programming Language?",
+    "options": [
+      "Java",
+      "Python",
+      "Assembly Language",
+      "C++",
+      "SQL"
+    ],
+    "answer": 2,
+    "explanation": "Low-level languages are machine code and Assembly Language, which are closer to the hardware's instruction set."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "MS Office",
+    "question": "In MS Word, which shortcut key is used to save a document with a new name or location (Save As)?",
+    "options": [
+      "Ctrl + S",
+      "F12",
+      "Alt + S",
+      "F7",
+      "Ctrl + Shift + S"
+    ],
+    "answer": 1,
+    "explanation": "F12 opens the 'Save As' dialog box. Ctrl + S performs a regular save."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "Networking",
+    "question": "TCP and UDP protocols operate at which layer of the OSI model?",
+    "options": [
+      "Network Layer",
+      "Data Link Layer",
+      "Application Layer",
+      "Transport Layer",
+      "Presentation Layer"
+    ],
+    "answer": 3,
+    "explanation": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) handle process-to-process communication at the Transport Layer (Layer 4)."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "Acronyms",
+    "question": "The acronym PDF stands for:",
+    "options": [
+      "Portable Data Format",
+      "Public Document File",
+      "Printable Document Format",
+      "Program Development File",
+      "Portable Document Format"
+    ],
+    "answer": 4,
+    "explanation": "PDF stands for Portable Document Format, a file format used to present documents in a manner independent of application software, hardware, and operating systems."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "Internet",
+    "question": "What is the function of a Firewall in a computer network?",
+    "options": [
+      "To compress data before transmission.",
+      "To translate domain names to IP addresses.",
+      "To filter incoming and outgoing network traffic based on security rules.",
+      "To manage email communication.",
+      "To encrypt all data passing through the network."
+    ],
+    "answer": 2,
+    "explanation": "A Firewall acts as a barrier, examining traffic and blocking anything that doesn't meet defined security criteria."
+  },
+  {
+    "section": "Computer Knowledge",
+    "topic": "Software",
+    "question": "Which type of software is necessary for a computer to start up and perform basic tasks?",
+    "options": [
+      "Application Software",
+      "Utility Software",
+      "Operating System (OS)",
+      "Database Software",
+      "Graphics Software"
+    ],
+    "answer": 2,
+    "explanation": "The OS (System Software) is the first program loaded on the computer and is essential for all other software to run."
+  }
+]
