@@ -393,7 +393,8 @@
 
     // --- CLOUD LOGIC ---
     function loadCloudManifest() {
-        fetch('test_manifest.json')
+        // UPDATED PATH BELOW:
+        fetch('tests/test_manifest.json') 
             .then(res => res.json())
             .then(data => {
                 cloudList = data;
@@ -858,3 +859,4 @@
 </script>
 </body>
 </html>
+
