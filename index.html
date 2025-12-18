@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>NABARD Exam Tool (v28 - Layout Fix)</title>
+    <title>NABARD Exam Tool (v29 - Cloud & Search)</title>
     <link rel="manifest" href="manifest.json">
     <style>
         :root {
@@ -14,62 +14,63 @@
             --accent: #007bff;
             --correct: #2ecc71;
             --wrong: #e74c3c;
-            --review-mode: #6c757d;
+            --cloud: #17a2b8;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
         
-        /* FIX 1: Use DVH (Dynamic Viewport Height) to respect Browser Bars */
         body { 
-            height: 100vh; /* Fallback */
-            height: 100dvh; /* Modern Browser Fix */
-            width: 100vw; 
-            overflow: hidden; 
-            background: var(--bg-color); 
-            display: flex;
-            flex-direction: column;
+            height: 100dvh; width: 100vw; overflow: hidden; 
+            background: var(--bg-color); display: flex; flex-direction: column;
         }
 
         /* --- SCREENS --- */
         .screen { display: none; height: 100%; width: 100%; flex-direction: column; }
-        
-        /* Active Screen Logic */
         #upload-screen.active, #result-screen.active { display: block; overflow-y: auto; }
         #exam-screen.active { display: flex; } 
 
         /* --- 1. UPLOAD SCREEN & LIBRARY --- */
-        .container-box { max-width: 900px; margin: 30px auto; padding: 0 20px 80px 20px; } /* Added bottom padding for scrolling */
+        .container-box { max-width: 900px; margin: 20px auto; padding: 0 20px 80px 20px; }
         
-        .library-box { background: var(--card-bg); padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center; margin-bottom: 20px; }
-        
-        .lib-controls { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
-        .toggle-btn { background: #eee; color: #333; padding: 8px 16px; border-radius: 20px; cursor: pointer; border: 1px solid #ccc; font-size: 0.9rem; display: flex; align-items: center; gap: 8px; }
-        .toggle-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
-        .toggle-btn .icon { font-weight: bold; font-size: 1.1rem; }
+        /* SEARCH & TABS */
+        .filter-bar { margin-bottom: 20px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .search-box { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; margin-bottom: 10px; }
+        .tabs { display: flex; gap: 10px; }
+        .tab-btn { flex: 1; padding: 8px; border: none; background: #eee; border-radius: 4px; cursor: pointer; font-weight: bold; color: #555; }
+        .tab-btn.active { background: var(--accent); color: white; }
 
-        .drop-zone { border: 2px dashed #ccc; background: #fafafa; cursor: pointer; border-radius: 6px; transition: 0.2s; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .library-box { background: var(--card-bg); padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center; margin-bottom: 20px; }
+        
+        /* Multi-Select Toggle */
+        .lib-controls { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .toggle-btn { background: #eee; color: #333; padding: 6px 12px; border-radius: 20px; cursor: pointer; border: 1px solid #ccc; font-size: 0.85rem; display: flex; align-items: center; gap: 5px; }
+        .toggle-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+
+        .drop-zone { border: 2px dashed #ccc; background: #fafafa; cursor: pointer; border-radius: 6px; transition: 0.2s; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; margin-bottom: 20px; }
         .drop-zone:hover { border-color: var(--accent); background: #f0f8ff; }
         input[type="file"] { display: none; }
 
-        .drop-zone-large { height: 150px; padding: 30px; margin-bottom: 20px; }
-        .drop-zone-large p { font-size: 1.2rem; margin: 0; }
-        .drop-zone-large span { font-size: 0.9rem; color: #777; }
-        
-        .drop-zone-small { height: 120px; border: 2px dashed var(--accent); background: #f8faff; }
-        .drop-zone-small p { font-size: 4rem; font-weight: bold; color: var(--accent); margin: 0; line-height: 0.8; padding-bottom: 10px; }
-        .drop-zone-small span { display: none; }
-
-        .file-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-top: 20px; }
-        .file-card { background: #fff; border: 1px solid #eee; padding: 15px; border-radius: 6px; cursor: pointer; transition: 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.05); text-align: left; height: 120px; display: flex; flex-direction: column; justify-content: center; position: relative;}
-        .file-card:hover { transform: translateY(-3px); border-color: var(--accent); }
+        .file-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin-top: 10px; }
+        .file-card { background: #fff; border: 1px solid #eee; padding: 12px; border-radius: 6px; cursor: pointer; transition: 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.05); text-align: left; height: 110px; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
+        .file-card:hover { transform: translateY(-2px); border-color: var(--accent); }
         .file-card.active { border: 2px solid var(--accent); background: #e3f2fd; }
-        .file-card.multi-selected { border: 2px solid var(--accent); background: #e3f2fd; box-shadow: 0 0 0 2px rgba(0,123,255,0.2); }
-        .multi-check { position: absolute; bottom: 10px; right: 10px; background: var(--accent); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; display: none; }
-        .file-card.multi-selected .multi-check { display: flex; }
-
-        .file-name { font-weight: bold; font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 5px; word-break: break-word; }
-        .del-file { position: absolute; top: 5px; right: 5px; color: #aaa; font-size: 1.2rem; line-height: 1; padding: 0 5px; z-index: 5; }
+        
+        /* Cloud Styling */
+        .file-card.cloud { border-left: 4px solid var(--cloud); }
+        .cloud-badge { position: absolute; top: 5px; right: 5px; font-size: 1.2rem; color: var(--cloud); }
+        .local-badge { position: absolute; top: 5px; right: 5px; font-size: 1.2rem; color: #aaa; }
+        
+        .file-name { font-weight: bold; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 5px; word-break: break-word; padding-right: 15px; }
+        
+        .file-meta { font-size: 0.75rem; color: #777; display: block; }
+        .del-file { position: absolute; bottom: 5px; right: 5px; color: #aaa; font-size: 1.2rem; line-height: 1; padding: 5px; z-index: 5; }
         .del-file:hover { color: var(--wrong); }
+
+        /* Multi Select Check */
+        .file-card.multi-selected { border: 2px solid var(--accent); background: #e3f2fd; }
+        .multi-check { position: absolute; top: 5px; right: 5px; background: var(--accent); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; display: none; }
+        .file-card.multi-selected .multi-check { display: flex; }
+        .file-card.multi-selected .cloud-badge { display: none; } /* Hide cloud icon when selected */
 
         .settings-box { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center; margin-bottom: 20px; }
         .time-inputs { display: flex; justify-content: center; gap: 10px; margin: 15px 0; }
@@ -87,24 +88,14 @@
         button.resume { background: #f39c12; margin-left: 10px; display: none; }
         button.retake { background: #27ae60; padding: 6px 12px; font-size: 0.8rem; }
         button.review { background: #6c757d; }
-        button.review:hover { background: #5a6268; }
         button.clear { background: transparent; color: #e74c3c; text-decoration: underline; margin-top: 10px; padding: 0; }
 
         /* --- 2. EXAM HEADER --- */
-        /* FIX 2: Flex-shrink 0 prevents header from being squashed */
         header { 
-            height: 60px; 
-            background: var(--header-bg); 
-            color: white; 
-            display: flex; 
-            align-items: center; 
-            justify-content: space-between; 
-            padding: 0 20px; 
-            width: 100%; 
-            flex-shrink: 0; 
-            z-index: 3000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-            padding-top: env(safe-area-inset-top); /* Handle Notches */
+            height: 60px; background: var(--header-bg); color: white; 
+            display: flex; align-items: center; justify-content: space-between; 
+            padding: 0 20px; width: 100%; flex-shrink: 0; z-index: 3000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2); padding-top: env(safe-area-inset-top); 
         }
         header.review-mode { background: #343a40; border-bottom: 3px solid #ffc107; }
         
@@ -115,16 +106,7 @@
         .timer.review-timer { color: #ffc107; border-color: #ffc107; }
         
         /* --- EXAM LAYOUT --- */
-        /* FIX 3: Flex-grow 1 allows it to take remaining space, minus header/nav */
-        .exam-layout { 
-            display: flex; 
-            flex: 1; 
-            width: 100%; 
-            overflow: hidden; 
-            background: #e9ecef; 
-            position: relative; 
-        }
-        
+        .exam-layout { display: flex; flex: 1; width: 100%; overflow: hidden; background: #e9ecef; position: relative; }
         .pane-passage { flex: 1; background: #fffbf2; padding: 25px; overflow-y: auto; border-right: 1px solid #ddd; font-family: Georgia, serif; line-height: 1.6; display: none; }
         .pane-passage.active { display: block; }
         
@@ -138,8 +120,6 @@
         .opt-label input { margin-right: 12px; margin-top: 4px; }
 
         .sidebar-handle { width: 15px; background: #dcdcdc; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: #555; z-index: 10; border-left: 1px solid #ccc; border-right: 1px solid #ccc; }
-        .sidebar-handle:hover { background: #ccc; }
-
         .pane-sidebar { width: 300px; background: #fff; display: flex; flex-direction: column; transition: width 0.3s ease; flex-shrink: 0; }
         .pane-sidebar.collapsed { width: 0; border: none; overflow: hidden; }
         
@@ -155,49 +135,35 @@
         .c-btn { flex: 1; padding: 6px; font-size: 0.8rem; border: 1px solid #ccc; background: white; border-radius: 4px; cursor: pointer; text-align: center; }
         .c-btn.sel { background: #673ab7; color: white; border-color: #5e35b1; }
 
-        /* --- MOBILE NAV BAR (UPDATED) --- */
-        /* FIX 4: Flex 0 0 auto keeps it rigid at the bottom of the flex container */
-        .mobile-nav { 
-            display: none; 
-            height: 60px; 
-            background: #fff; 
-            border-top: 1px solid #ccc; 
-            align-items: center; 
-            justify-content: space-around; 
-            flex-shrink: 0; 
-            z-index: 3000;
-            padding-bottom: env(safe-area-inset-bottom); /* Handle Home Bar */
-        }
+        /* --- MOBILE NAV & RESULTS --- */
+        .mobile-nav { display: none; height: 60px; background: #fff; border-top: 1px solid #ccc; align-items: center; justify-content: space-around; flex-shrink: 0; z-index: 3000; padding-bottom: env(safe-area-inset-bottom); }
         .mn-btn { background: transparent; color: #555; font-size: 1.2rem; padding: 10px; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; }
-        .mn-btn:active { background: #eee; }
         .mn-btn.primary { color: var(--accent); font-weight: bold; font-size: 1.5rem; }
-
         .mobile-menu { display: none; background: transparent; font-size: 1.5rem; margin-left: 10px; border:none; color: white;}
         
+        .result-container { max-width: 850px; margin: 40px auto; padding-bottom: 50px; }
+        .score-row { display: flex; justify-content: center; gap: 20px; margin-bottom: 30px; flex-wrap: wrap; }
+        .score-card { background: white; padding: 20px; border-radius: 8px; width: 150px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 4px solid #ccc; }
+        .score-card.tot { border-color: var(--accent); }
+        .score-card.cor { border-color: var(--correct); }
+        .score-card.wrg { border-color: var(--wrong); }
+        .analysis-section { background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); padding: 20px; margin-bottom: 25px; }
+        .analysis-section h3 { margin-bottom: 15px; text-align: center; color: #444; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .review-item { background: white; border-left: 5px solid #ccc; padding: 15px; margin-bottom: 15px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); position: relative; }
+        .review-item.correct { border-left-color: var(--correct); }
+        .review-item.wrong { border-left-color: var(--wrong); }
+        .txt-green { color: var(--correct); font-weight: bold; }
+        .txt-red { color: var(--wrong); font-weight: bold; }
+
         @media (max-width: 768px) {
-            /* Full Height Layout for Mobile */
             .pane-passage { height: 35%; border-bottom: 2px solid #ccc; border-right: none; flex: none; }
             .sidebar-handle { display: none; }
-            
-            /* Sidebar Overlay */
-            .pane-sidebar { 
-                position: fixed; 
-                top: 60px; 
-                right: -100%; 
-                height: calc(100dvh - 120px); /* Smart calculation */
-                z-index: 4000; 
-                width: 85%; 
-                box-shadow: -5px 0 15px rgba(0,0,0,0.2); 
-            }
+            .pane-sidebar { position: fixed; top: 60px; right: -100%; height: calc(100dvh - 120px); z-index: 4000; width: 85%; box-shadow: -5px 0 15px rgba(0,0,0,0.2); }
             .pane-sidebar.open { right: 0; }
-            
             .mobile-menu { display: none; }
-            .mobile-nav { display: flex; } /* Visible on Mobile */
-            
+            .mobile-nav { display: flex; }
             #overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 3500; }
             #overlay.active { display: block; }
-
-            /* Hide Desktop Buttons on Mobile */
             #next-btn { display: none; } 
         }
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
@@ -209,17 +175,26 @@
 
 <div id="upload-screen" class="screen active">
     <div class="container-box">
+        
+        <div class="filter-bar">
+            <input type="text" class="search-box" id="searchInput" placeholder="🔍 Search tests..." onkeyup="renderGrid()">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="setTab('all')">All</button>
+                <button class="tab-btn" onclick="setTab('local')">Local</button>
+                <button class="tab-btn" onclick="setTab('cloud')">Cloud</button>
+            </div>
+        </div>
+
         <div class="library-box">
             <div class="lib-controls">
-                <h1>NABARD Exam Library</h1>
+                <h1 style="font-size:1.2rem;">Exam Library</h1>
                 <div class="toggle-btn" id="multiToggle" onclick="toggleMultiSelect()">
                     <span class="icon">❑</span> Select Multiple
                 </div>
             </div>
             
-            <label class="drop-zone drop-zone-large" id="dropZone">
-                <p>📂 Click to Load JSON Files</p>
-                <span>(Drag & Drop supported)</span>
+            <label class="drop-zone" id="dropZone">
+                <p>📂 Click to Upload Local Files</p>
                 <input type="file" id="jsonFile" accept=".json" multiple>
             </label>
             
@@ -351,79 +326,157 @@
 </div>
 
 <script>
-    // --- TOP VARIABLES ---
-    const KEY = 'nabard_v28_data';
-    const HIST = 'nabard_v28_hist';
-    const LIB_KEY = 'nabard_v28_library';
+    // --- KEY VARIABLES ---
+    const KEY = 'nabard_v29_data';
+    const HIST = 'nabard_v29_hist';
+    const LIB_KEY = 'nabard_v29_library';
     
-    let library = {}, activeFile = '', questions = [], currIdx = 0;
+    let library = {}, cloudList = [], activeFile = '', questions = [], currIdx = 0;
     let responses = {}, confidence = {}, visited = {};
     let timer, seconds = 0;
-    
-    let isMultiMode = false;
-    let selectedFiles = new Set();
-    let isReviewMode = false;
-    let reviewSet = [];
+    let isMultiMode = false, selectedFiles = new Set();
+    let isReviewMode = false, reviewSet = [];
+    let currentTab = 'all'; // 'all', 'local', 'cloud'
 
-    // --- PWA LAUNCH ---
+    // --- PWA HANDLERS ---
     if ('launchQueue' in window) {
         window.launchQueue.setConsumer(async (launchParams) => {
             if (!launchParams.files.length) return;
-            try {
-                const fileHandle = launchParams.files[0];
-                const file = await fileHandle.getFile();
-                loadFiles([file]);
-            } catch (err) {
-                console.error("File Open Error:", err);
-                alert("Error opening file: " + err.message);
-            }
+            try { loadFiles([await launchParams.files[0].getFile()]); } 
+            catch (err) { console.error("File Error:", err); }
         });
     }
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 
-    // --- SW REGISTER ---
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js')
-        .then(() => console.log('SW Registered'))
-        .catch(err => console.log('SW Fail', err));
-    }
-
-    // --- SWIPE LOGIC ---
-    let touchStartX = 0;
-    let touchEndX = 0;
-
+    // --- SWIPE ---
+    let touchStartX=0, touchEndX=0;
+    
     window.onload = () => { 
         try { 
             loadLibraryFromStorage(); 
+            loadCloudManifest(); // Fetch Cloud List
             loadHistory(); 
             checkResume(); 
             
-            const touchArea = document.getElementById('touch-area');
-            touchArea.addEventListener('touchstart', e => {
-                touchStartX = e.changedTouches[0].screenX;
-            });
-            touchArea.addEventListener('touchend', e => {
-                touchEndX = e.changedTouches[0].screenX;
-                handleSwipe();
-            });
-
+            const ta = document.getElementById('touch-area');
+            ta.addEventListener('touchstart', e => touchStartX = e.changedTouches[0].screenX);
+            ta.addEventListener('touchend', e => { touchEndX = e.changedTouches[0].screenX; handleSwipe(); });
         } catch(e){ console.error(e); } 
     };
 
     function handleSwipe() {
-        const threshold = 50; 
-        if (touchStartX - touchEndX > threshold) {
-            nextQ(); // Left Swipe -> Next
-        } else if (touchEndX - touchStartX > threshold) {
-            prevQ(); // Right Swipe -> Prev
+        if (touchStartX - touchEndX > 50) nextQ();
+        else if (touchEndX - touchStartX > 50) prevQ();
+    }
+
+    // --- CLOUD LOGIC ---
+    function loadCloudManifest() {
+        fetch('test_manifest.json')
+            .then(res => res.json())
+            .then(data => {
+                cloudList = data; // ["tests/ARD.json", ...]
+                renderGrid();
+            })
+            .catch(err => console.log('No cloud manifest found'));
+    }
+
+    async function downloadCloudFile(path) {
+        if(confirm("Download and open this test from Cloud?")) {
+            const btn = document.getElementById('start-btn');
+            btn.innerText = "Downloading...";
+            try {
+                const res = await fetch(path);
+                const data = await res.json();
+                
+                // Add to local library
+                const fileName = path.split('/').pop();
+                library[fileName] = data;
+                saveLibraryToStorage();
+                
+                // Select it
+                activeFile = fileName;
+                renderGrid();
+                
+                // Auto Select
+                document.getElementById('start-btn').innerText = 'Start: ' + fileName.replace(/\.json$/i,'');
+                document.getElementById('start-btn').disabled = false;
+                
+            } catch(e) {
+                alert("Download failed: " + e.message);
+                btn.innerText = "Select a Test";
+            }
         }
     }
 
-    document.getElementById('jsonFile').onchange = (e) => loadFiles(e.target.files);
-    const drop = document.getElementById('dropZone');
-    drop.ondragover = e => { e.preventDefault(); drop.style.background='#e1f5fe'; };
-    drop.ondragleave = e => { e.preventDefault(); drop.style.background='#fafafa'; };
-    drop.ondrop = e => { e.preventDefault(); drop.style.background='#fafafa'; loadFiles(e.dataTransfer.files); };
+    // --- GRID RENDER & FILTER ---
+    function setTab(tab) {
+        currentTab = tab;
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        event.target.classList.add('active');
+        renderGrid();
+    }
 
+    function renderGrid() {
+        const grid = document.getElementById('file-grid'); grid.innerHTML = '';
+        const search = document.getElementById('searchInput').value.toLowerCase();
+        
+        let displayList = [];
+
+        // 1. Process Local Files
+        if (currentTab === 'all' || currentTab === 'local') {
+            Object.keys(library).forEach(name => {
+                if(name.toLowerCase().includes(search)) {
+                    displayList.push({ type: 'local', name: name, qCount: library[name].length });
+                }
+            });
+        }
+
+        // 2. Process Cloud Files (exclude if already in local)
+        if (currentTab === 'all' || currentTab === 'cloud') {
+            cloudList.forEach(path => {
+                const name = path.split('/').pop();
+                if(!library[name] && name.toLowerCase().includes(search)) { // Only show if not downloaded
+                    displayList.push({ type: 'cloud', name: name, path: path });
+                }
+            });
+        }
+
+        // 3. Render Cards
+        displayList.forEach(item => {
+            const d = document.createElement('div');
+            
+            if (item.type === 'local') {
+                d.className = 'file-card';
+                if (isMultiMode && selectedFiles.has(item.name)) d.classList.add('multi-selected');
+                else if (item.name === activeFile) d.classList.add('active');
+                
+                d.innerHTML = `
+                    <div class="local-badge">✓</div>
+                    <div class="del-file" onclick="deleteFile(event, '${item.name}')">×</div>
+                    <span class="file-name">${item.name}</span>
+                    <small class="file-meta">${item.qCount} Qs</small>
+                    <div class="multi-check">✔</div>
+                `;
+                d.onclick = () => handleCardClick(item.name);
+            } else {
+                d.className = 'file-card cloud';
+                d.innerHTML = `
+                    <div class="cloud-badge">☁️</div>
+                    <span class="file-name">${item.name}</span>
+                    <small class="file-meta" style="color:var(--accent)">Tap to Download</small>
+                `;
+                d.onclick = () => downloadCloudFile(item.path);
+            }
+            grid.appendChild(d);
+        });
+        
+        // Show message if empty
+        if(displayList.length === 0) grid.innerHTML = '<div style="color:#999; padding:20px;">No tests found.</div>';
+    }
+
+    // --- STANDARD FUNCTIONS (Unchanged logic) ---
+    document.getElementById('jsonFile').onchange = (e) => loadFiles(e.target.files);
+    
     function loadLibraryFromStorage() {
         const savedLib = localStorage.getItem(LIB_KEY);
         if(savedLib) { try { library = JSON.parse(savedLib); renderGrid(); } catch(e){} }
@@ -433,14 +486,12 @@
     function loadFiles(files) {
         if(!files.length) return;
         Array.from(files).forEach(f => {
-            if(f.name.endsWith('.json')) {
-                const r = new FileReader();
-                r.onload = e => { 
-                    try { library[f.name] = JSON.parse(e.target.result); saveLibraryToStorage(); renderGrid(); } 
-                    catch(x){ alert('Invalid JSON: '+f.name); }
-                };
-                r.readAsText(f);
-            }
+            const r = new FileReader();
+            r.onload = e => { 
+                try { library[f.name] = JSON.parse(e.target.result); saveLibraryToStorage(); renderGrid(); } 
+                catch(x){ alert('Invalid JSON'); }
+            };
+            r.readAsText(f);
         });
     }
 
@@ -459,49 +510,6 @@
         renderGrid();
         document.getElementById('start-btn').disabled = true;
         document.getElementById('start-btn').innerText = "Select a Test Above";
-    }
-
-    function renderGrid() {
-        const grid = document.getElementById('file-grid'); grid.innerHTML = '';
-        const dropZone = document.getElementById('dropZone');
-        const fileCount = Object.keys(library).length;
-
-        if (fileCount === 0) {
-            dropZone.className = 'drop-zone drop-zone-large';
-            dropZone.querySelector('p').innerHTML = '📂 Click to Load JSON Files';
-            dropZone.querySelector('span').style.display = 'block';
-            dropZone.style.display = 'flex'; grid.style.display = 'none'; return;
-        } else {
-            dropZone.className = 'drop-zone drop-zone-small';
-            dropZone.querySelector('p').innerHTML = '+';
-            dropZone.querySelector('span').style.display = 'none';
-            dropZone.style.display = 'flex'; grid.style.display = 'grid';
-        }
-        
-        Object.keys(library).forEach(name => {
-            const d = document.createElement('div'); d.className = 'file-card';
-            if (isMultiMode) { if (selectedFiles.has(name)) d.classList.add('multi-selected'); } 
-            else { if (name === activeFile) d.classList.add('active'); }
-
-            d.innerHTML = `<div class="del-file" onclick="deleteFile(event, '${name}')">×</div><span class="file-name">${name}</span><small style="color:#777">${library[name].length} Qs</small><div class="multi-check">✔</div>`;
-            d.onclick = () => handleCardClick(name);
-            grid.appendChild(d);
-        });
-
-        if(fileCount > 0) {
-            const wrapper = document.createElement('div');
-            wrapper.className = 'file-card';
-            wrapper.style.cursor = 'pointer';
-            wrapper.style.display = 'flex';
-            wrapper.style.justifyContent = 'center';
-            wrapper.style.alignItems = 'center';
-            wrapper.style.background = '#f8faff';
-            wrapper.style.border = '2px dashed #007bff';
-            wrapper.onclick = () => document.getElementById('jsonFile').click();
-            wrapper.innerHTML = `<p style="font-size:4rem; margin:0; color:#007bff; line-height:0.8;">+</p>`;
-            grid.appendChild(wrapper);
-            dropZone.style.display = 'none'; 
-        }
     }
 
     function handleCardClick(name) {
