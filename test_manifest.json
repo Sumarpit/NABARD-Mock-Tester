@@ -21,7 +21,11 @@
 ,
 "tests/NABARD English Set 1.json"
 ,
+"tests/NABARD GA Internation Organisation.json"
+,
 "tests/NABARD GA Mock 2.json"
+,
+"tests/NABARD GA Mock 3.json"
 ,
 "tests/NABARD GA Schemes 1 Difficult.json"
 ,
