@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>NABARD Exam Tool (v27 - Mobile Fix)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>NABARD Exam Tool (v28 - Layout Fix)</title>
     <link rel="manifest" href="manifest.json">
     <style>
         :root {
@@ -18,15 +18,27 @@
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
-        body { height: 100vh; width: 100vw; overflow: hidden; background: var(--bg-color); }
+        
+        /* FIX 1: Use DVH (Dynamic Viewport Height) to respect Browser Bars */
+        body { 
+            height: 100vh; /* Fallback */
+            height: 100dvh; /* Modern Browser Fix */
+            width: 100vw; 
+            overflow: hidden; 
+            background: var(--bg-color); 
+            display: flex;
+            flex-direction: column;
+        }
 
         /* --- SCREENS --- */
-        .screen { display: none; height: 100%; width: 100%; }
-        #exam-screen.active { display: flex; flex-direction: column; } 
+        .screen { display: none; height: 100%; width: 100%; flex-direction: column; }
+        
+        /* Active Screen Logic */
         #upload-screen.active, #result-screen.active { display: block; overflow-y: auto; }
+        #exam-screen.active { display: flex; } 
 
         /* --- 1. UPLOAD SCREEN & LIBRARY --- */
-        .container-box { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+        .container-box { max-width: 900px; margin: 30px auto; padding: 0 20px 80px 20px; } /* Added bottom padding for scrolling */
         
         .library-box { background: var(--card-bg); padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center; margin-bottom: 20px; }
         
@@ -79,27 +91,44 @@
         button.clear { background: transparent; color: #e74c3c; text-decoration: underline; margin-top: 10px; padding: 0; }
 
         /* --- 2. EXAM HEADER --- */
+        /* FIX 2: Flex-shrink 0 prevents header from being squashed */
         header { 
-            height: 70px; background: var(--header-bg); color: white; 
-            display: flex; align-items: center; justify-content: space-between; 
-            padding: 0 30px; width: 100%; flex-shrink: 0; z-index: 2000;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            height: 60px; 
+            background: var(--header-bg); 
+            color: white; 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 0 20px; 
+            width: 100%; 
+            flex-shrink: 0; 
+            z-index: 3000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            padding-top: env(safe-area-inset-top); /* Handle Notches */
         }
         header.review-mode { background: #343a40; border-bottom: 3px solid #ffc107; }
         
-        .header-title { font-size: 1.6rem; font-weight: 700; letter-spacing: 1px; white-space: nowrap; text-transform: uppercase; }
-        .header-controls { display: flex; align-items: center; gap: 20px; }
-        .timer { font-weight: bold; background: #222; color: #00ff00; padding: 8px 16px; border-radius: 4px; font-family: 'Courier New', monospace; font-size: 1.4rem; border: 1px solid #444; }
+        .header-title { font-size: 1.1rem; font-weight: 700; letter-spacing: 1px; white-space: nowrap; text-transform: uppercase; overflow: hidden; text-overflow: ellipsis; max-width: 60%; }
+        .header-controls { display: flex; align-items: center; gap: 10px; }
+        .timer { font-weight: bold; background: #222; color: #00ff00; padding: 5px 10px; border-radius: 4px; font-family: 'Courier New', monospace; font-size: 1.1rem; border: 1px solid #444; }
         .timer.critical { background: #e74c3c; color: white; animation: pulse 1s infinite; }
         .timer.review-timer { color: #ffc107; border-color: #ffc107; }
         
         /* --- EXAM LAYOUT --- */
-        .exam-layout { display: flex; flex: 1; width: 100%; overflow: hidden; background: #e9ecef; position: relative; }
+        /* FIX 3: Flex-grow 1 allows it to take remaining space, minus header/nav */
+        .exam-layout { 
+            display: flex; 
+            flex: 1; 
+            width: 100%; 
+            overflow: hidden; 
+            background: #e9ecef; 
+            position: relative; 
+        }
         
         .pane-passage { flex: 1; background: #fffbf2; padding: 25px; overflow-y: auto; border-right: 1px solid #ddd; font-family: Georgia, serif; line-height: 1.6; display: none; }
         .pane-passage.active { display: block; }
         
-        .pane-question { flex: 1.2; background: #fff; padding: 25px; overflow-y: auto; display: flex; flex-direction: column; min-width: 300px; }
+        .pane-question { flex: 1.2; background: #fff; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; min-width: 300px; -webkit-overflow-scrolling: touch; }
         .q-meta { font-size: 0.85rem; color: #777; margin-bottom: 10px; display: flex; justify-content: space-between; font-weight: bold; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px; }
         .q-text { font-size: 1.15rem; margin-bottom: 20px; line-height: 1.5; font-weight: 500; }
         
@@ -126,33 +155,50 @@
         .c-btn { flex: 1; padding: 6px; font-size: 0.8rem; border: 1px solid #ccc; background: white; border-radius: 4px; cursor: pointer; text-align: center; }
         .c-btn.sel { background: #673ab7; color: white; border-color: #5e35b1; }
 
-        /* MOBILE NAV BAR */
-        .mobile-nav { display: none; height: 60px; background: #fff; border-top: 1px solid #ccc; align-items: center; justify-content: space-around; flex-shrink: 0; z-index: 2000; }
+        /* --- MOBILE NAV BAR (UPDATED) --- */
+        /* FIX 4: Flex 0 0 auto keeps it rigid at the bottom of the flex container */
+        .mobile-nav { 
+            display: none; 
+            height: 60px; 
+            background: #fff; 
+            border-top: 1px solid #ccc; 
+            align-items: center; 
+            justify-content: space-around; 
+            flex-shrink: 0; 
+            z-index: 3000;
+            padding-bottom: env(safe-area-inset-bottom); /* Handle Home Bar */
+        }
         .mn-btn { background: transparent; color: #555; font-size: 1.2rem; padding: 10px; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; }
         .mn-btn:active { background: #eee; }
         .mn-btn.primary { color: var(--accent); font-weight: bold; font-size: 1.5rem; }
 
-        /* Mobile Adjustments */
         .mobile-menu { display: none; background: transparent; font-size: 1.5rem; margin-left: 10px; border:none; color: white;}
         
         @media (max-width: 768px) {
-            header { padding: 0 15px; height: 60px; }
-            .header-title { font-size: 1rem; }
-            .timer { font-size: 1rem; padding: 4px 8px; }
-            
-            .exam-layout { height: calc(100vh - 120px); } 
+            /* Full Height Layout for Mobile */
             .pane-passage { height: 35%; border-bottom: 2px solid #ccc; border-right: none; flex: none; }
-            
             .sidebar-handle { display: none; }
             
-            .pane-sidebar { position: fixed; top: 60px; right: -100%; height: calc(100% - 120px); z-index: 2000; width: 85%; box-shadow: -5px 0 15px rgba(0,0,0,0.2); }
+            /* Sidebar Overlay */
+            .pane-sidebar { 
+                position: fixed; 
+                top: 60px; 
+                right: -100%; 
+                height: calc(100dvh - 120px); /* Smart calculation */
+                z-index: 4000; 
+                width: 85%; 
+                box-shadow: -5px 0 15px rgba(0,0,0,0.2); 
+            }
             .pane-sidebar.open { right: 0; }
             
             .mobile-menu { display: none; }
-            .mobile-nav { display: flex; }
+            .mobile-nav { display: flex; } /* Visible on Mobile */
             
-            #overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1500; }
+            #overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 3500; }
             #overlay.active { display: block; }
+
+            /* Hide Desktop Buttons on Mobile */
+            #next-btn { display: none; } 
         }
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
     </style>
@@ -305,10 +351,10 @@
 </div>
 
 <script>
-    // --- VARIABLES MOVED TO TOP FOR MOBILE STABILITY ---
-    const KEY = 'nabard_v27_data';
-    const HIST = 'nabard_v27_hist';
-    const LIB_KEY = 'nabard_v27_library';
+    // --- TOP VARIABLES ---
+    const KEY = 'nabard_v28_data';
+    const HIST = 'nabard_v28_hist';
+    const LIB_KEY = 'nabard_v28_library';
     
     let library = {}, activeFile = '', questions = [], currIdx = 0;
     let responses = {}, confidence = {}, visited = {};
@@ -319,7 +365,7 @@
     let isReviewMode = false;
     let reviewSet = [];
 
-    // --- PWA LAUNCH HANDLER ---
+    // --- PWA LAUNCH ---
     if ('launchQueue' in window) {
         window.launchQueue.setConsumer(async (launchParams) => {
             if (!launchParams.files.length) return;
@@ -334,7 +380,7 @@
         });
     }
 
-    // --- SERVICE WORKER ---
+    // --- SW REGISTER ---
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('sw.js')
         .then(() => console.log('SW Registered'))
@@ -351,7 +397,6 @@
             loadHistory(); 
             checkResume(); 
             
-            // Add Swipe Listeners
             const touchArea = document.getElementById('touch-area');
             touchArea.addEventListener('touchstart', e => {
                 touchStartX = e.changedTouches[0].screenX;
@@ -367,9 +412,9 @@
     function handleSwipe() {
         const threshold = 50; 
         if (touchStartX - touchEndX > threshold) {
-            nextQ(); // Swiped Left -> Next
+            nextQ(); // Left Swipe -> Next
         } else if (touchEndX - touchStartX > threshold) {
-            prevQ(); // Swiped Right -> Prev
+            prevQ(); // Right Swipe -> Prev
         }
     }
 
