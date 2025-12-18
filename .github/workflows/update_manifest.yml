@@ -1,11 +1,8 @@
 name: Update Test Manifest
 on:
-  # Trigger 1: Automatic - Runs when you upload/change a JSON in the tests folder
   push:
     paths:
       - 'tests/**.json'
-      
-  # Trigger 2: Manual - Adds a "Run Workflow" button in the Actions tab
   workflow_dispatch:
 
 permissions:
@@ -18,46 +15,40 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Generate Manifest File
+      - name: Generate Manifest in Tests Folder
         run: |
-          # 1. Create/Overwrite the file with an opening bracket
-          echo "[" > test_manifest.json
+          # 1. Target the file INSIDE the tests folder
+          echo "[" > tests/test_manifest.json
           
-          # 2. Loop through every .json file in the 'tests' folder
           first=true
           for file in tests/*.json; do
-            # Check if file actually exists (avoids errors if folder is empty)
-            if [ -f "$file" ]; then
+            # 2. Exclude the manifest file itself so it doesn't list itself as a test
+            if [ -f "$file" ] && [ "$file" != "tests/test_manifest.json" ]; then
               if [ "$first" = true ]; then
                 first=false
               else
-                # Add comma before the next item
-                echo "," >> test_manifest.json
+                echo "," >> tests/test_manifest.json
               fi
-              # Add the filename to the list
-              echo "\"$file\"" >> test_manifest.json
+              echo "\"$file\"" >> tests/test_manifest.json
             fi
           done
           
-          # 3. Close the JSON array
-          echo "]" >> test_manifest.json
+          echo "]" >> tests/test_manifest.json
           
-          # Debug: Show the result in the log
-          echo "Generated manifest content:"
-          cat test_manifest.json
+          # Debug view
+          cat tests/test_manifest.json
 
       - name: Commit and Push
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           
-          # Force add the file (creates it if it doesn't exist)
-          git add test_manifest.json
+          # 3. Add the specific file in the tests folder
+          git add tests/test_manifest.json
           
-          # Commit and Push only if there are changes
           if git diff --staged --quiet; then
-            echo "No changes to test_manifest.json"
+            echo "No changes to commit"
           else
-            git commit -m "Auto-update test_manifest.json"
+            git commit -m "Auto-update manifest in tests folder"
             git push
           fi
